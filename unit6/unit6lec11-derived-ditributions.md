@@ -1,4 +1,3 @@
-# Lecture 11: Derived Distributions
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
@@ -19,6 +18,11 @@ $\newcommand{\norm}{\mathcal{N}}$
 $\DeclareMathOperator{\exp}{exp}$
 $\newcommand{\abs}[1]{ \left|#1\right| }$
 
+
+# Lecture 11: Derived Distributions
+
+## Overview
+
 * Given the distribution of $X$, find the distribution of $Y = g(X)$
   * discrete
   * continuous
@@ -33,13 +37,15 @@ We often build up models from simpler distributions.
 Why should you not always jump to determining some distribution $g(X)$?  
 It can be easier to use the expected value rule.
 
+
 ## Discrete case
 
 Looking at a simple example $Y = g(X)$:
 
 ![](unit6lec11-derived-ditributions\b5333b5b3cc92903955995e1085f070b.png)
 
-We want to sum all the probabilities of $x$ that lead to some $y$.
+So when $X$ takes on the value $x$, $Y$ takes the value $g(x)$.
+To find out the probability of each $y$, we want to sum the probabilities of each $x$ that leads to it.
 
 \[
 \begin{align}
@@ -53,7 +59,7 @@ A linear function has, at most, a coefficient and some scalar. So, given $Y = aX
 \pmf{Y}{y} = \pmf{X}{\frac{y-b}{a}}
 \]
 
-An example shoring this derivation is below, when you let $Y = 2X + 3$,
+To show how this is derived, take $Y = 2X + 3$ and notice
 \[
 \begin{align}
 \pmf{Y}{y} &= \pr{Y = y}\\
@@ -63,6 +69,7 @@ An example shoring this derivation is below, when you let $Y = 2X + 3$,
 \end{align}
 \]
 
+
 ## Linear function of a continuous random variable
 
 What is the main difference between **linear functions** of discrete and continuous r.v.s?  
@@ -70,7 +77,7 @@ Continuous r.v.s have to worry about total area, which changes over intervals wh
 
 ![examples of scaling a continuous distribution](unit6lec11-derived-ditributions\53d0a29231b121991e20572979d17f23.png)
 
-Even though the actual value changes, the relative values of the distribution do not change.
+Even though the actual value of the PDF changes, the relative values of the corresponding parts of the distribution do not change.
 
 What is the form of the linear function equality for continuous r.v.s?  
 \[
@@ -99,27 +106,36 @@ and we have the proof of the previous statement, if $X \sim \norm(\mu, \sigma^2)
 
 What are the 2 steps for finding the PDF of a general function?  
 1. Find the CDF of $Y$ in terms of $X$, $\cdf{Y}{y} = \pr{Y \le y} = \pr{g(x) \le y}$
-2. Differentiate $\pdf{Y}{y} = \frac{\d F_Y}{\d y}(y)$
+2. Differentiate to obtain the PDF. $\pdf{Y}{y} = \frac{\d F_Y}{\d y}(y)$
 
 Examples:
-Let $X$ be uniform on $[0, 2]$ and $Y = X^3$, then $\pdf{Y}{y} = \frac{1}{6}\cdot\frac{1}{y^{\frac{2}{3}}}$. Notice that $Y$ is not uniform.
+Let $X$ be uniform on $[0, 2]$ and $Y = X^3$, then $\pdf{Y}{y} = \frac{1}{6}\cdot\frac{1}{y^{\frac{2}{3}}}$. Notice that $Y$ is not uniform. The function has spread the probability of $X$ across different parts of $Y$.
+
+If you look at a graph of $\pdf{Y}{y}$:
+
+![PDF of Y](unit6lec11-derived-ditributions\116c1b8ea45356314f61f5cdcfddb4a2.png)
+
+then it's easy to see that little $y$s are more likely than big $y$s. $X$ may have been uniform, but as $x$ increases in value consecutive equally likely small intervals of $X$ map to larger areas of $Y$ and so the probability of values in these areas are lower.
 
 ![PDF of a general function example 2](unit6lec11-derived-ditributions\fa59434a551c6b21e5cde1f11a436564.png)
 
 
 ## The monotonic case
 
-Given $Y = g(X)$, if $g(X)$ is monotonic and everywhere differentiable, then it is injective. In this case then there exists an inverse $h(Y)$ which goes to each $y$ assigns an $x$.
+Given $Y = g(X)$, if $g(X)$ is monotonic and everywhere differentiable, then it is injective (one-to-one) and there exists an inverse $h(Y)$.
 
 ![](unit6lec11-derived-ditributions\cda7ae412f2bdc0c95db6c2b027147ee.png)
 
 ![](unit6lec11-derived-ditributions\74daf83375f40fe39373d457fd56fda3.png)
 
-![](unit6lec11-derived-ditributions\47f69a34717656cc5b873e4d415cc297.png)
-
 Recognize that because the blue decreasing case has negative slope then it will be negative and negated by the negative, but this is just the absolute value.
 
-Doing this and using the formula breaks down the 2 step process into essentially: find the inverse function and differentiate.
+So for $Y = g(X)$ monotonic, the formula for the PDF of $Y$ is:
+\[
+\pdf{Y}{y} = \pdf{X}{h(y)}\abs{\frac{\d h}{\d y}(y)}
+\]
+
+For monotonic functions, using the formula breaks down the 2 step process given before into essentially: find the inverse function and differentiate.
 
 
 ## Intuition for the monotonic case
@@ -153,3 +169,5 @@ Essentially use arguments from geometry and go through the same steps.
 Interesting problem on the last one:
 
 ![](unit6lec11-derived-ditributions\e08796ee8e4679535b9e438812c7a800.png)
+
+It's cute that the area of the unit circle is $\pi$.
