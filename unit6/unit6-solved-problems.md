@@ -23,7 +23,11 @@ $\newcommand{\abs}[1]{ \left|#1\right| }$
 
 # Solved Problems
 
-## L13S2
+## S1
+
+Visual example 0-5:00
+
+## S2
 
 Relate $X$ and $Y$ together
 ![](unit6-solved-problems\2614ba15e014e2d654bebfb258b367dc.png)
@@ -48,7 +52,7 @@ Problems:
 
 always think about the ranges
 
-##L13S3
+## S3
 Ambulance travel time. An ambulance travels back and forth, at a constant speed v, along a road of length ℓ. We may model the location of the ambulance at any moment in time to be uniformly distributed over the interval (0,ℓ). Also at any moment in time, an accident (not involving the ambulance itself) occurs at a point uniformly distributed on the road; that is, the accident's distance from one of the fixed ends of the road is also uniformly distributed over the interval (0,ℓ). Assume the location of the accident and the location of the ambulance are independent.
 
 Supposing the ambulance is capable of immediate U-turns, compute the CDF and PDF of the ambulance's travel time T to the location of the accident.
@@ -56,7 +60,8 @@ Supposing the ambulance is capable of immediate U-turns, compute the CDF and PDF
 ![](unit6-solved-problems\a19d3be0788d062600a52b3b901b3f53.png)
 
 ![](unit6-solved-problems\6be83f1a7ec0790e2588845281fb74fb.png)
-##:13S4
+
+## S4
 
 
 ![](unit6-solved-problems\ea96e08709d98502a536a3a34b39cf26.png)
@@ -67,4 +72,4 @@ we could do the same integration for the other side but it's easier to notice th
 ![](unit6-solved-problems\6e374ea99bee8bf674d12a532995e579.png)
 ![](unit6-solved-problems\01db7d3d6159440be948947b0e13c2f4.png)
 
-##L13S5
+## S5

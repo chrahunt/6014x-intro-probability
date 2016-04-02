@@ -212,7 +212,7 @@ which makes intuitive sense, but it is always good to have a formal derivation.
 
 Note that we can turn the equalities between numbers into an equality between r.v.s because the equations are true for any choice of value from the space of the r.v.s involved.
 
-Assuming $X$ is identically distributed makes things much simpler.
+Assuming the $X_i$ are identically distributed makes things much simpler.
 
 ## Variance of the (sum of (a random number of r.v.s))
 
