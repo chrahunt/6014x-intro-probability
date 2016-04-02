@@ -20,6 +20,10 @@ $\DeclareMathOperator{\exp}{exp}$
 $\DeclareMathOperator{\cov}{cov}$
 $\newcommand{\ninfty}{{-\infty}}$
 $\newcommand{\abs}[1]{ \left|#1\right| }$
+$\newcommand{\Th}{\Theta}$
+$\newcommand{\th}{\theta}$
+$\newcommand{\Thh}{\widehat{\Theta}}$
+$\newcommand{\thh}{\widehat{\theta}}$
 
 ## Overview
 
@@ -38,24 +42,24 @@ $\newcommand{\abs}[1]{ \left|#1\right| }$
 
 ## Overview of some application domains
 
-Going back to the big picture. Interence/statistics works to generate models from data. Models are then used by probability theory to do analysis.
+This is a big picture we've seen before:
 
-The prevalence of data in the modern world has changed what statisticians can do.
+![](unit7lec14-intro-to-bayesian-inference\2d09b9c83e0143ee81752d6a07001d61.png)
 
-Big:
- data
- models
- computers
+Recall that inference/statistics works to generate models from **data**. Models are then analyzed using probability theory.
 
-Polling
-Marketing, advertising - recommender systems like Netflix
-Finance
-Life sciences with genomic data - disease causes
+The prevalence of data in the modern world has changed what statisticians can do. More data and more computing power means bigger models with more parameters.
+
+Some examples where inference is used:
+* Polling
+* Marketing, advertising - recommender systems like Netflix
+* Finance
+* Life sciences - analyzing genomic data to determine disease causes
 
 Modeling/monitoring:
-- the ocean
-- global climate
-- pollution
+* the ocean
+* global climate
+* pollution
 
 physics and astronomy
 
@@ -92,22 +96,22 @@ Estimation problem:
 
 ## The Bayesian inference framework
 
-$\Theta$ unknown r.v.
+$\Th$ unknown r.v.
 
 What is the primary difference between the bayesian framework and other frameworks?  
 In the bayesian framework the unknown variable is treated as a random variable instead of a constant.
 
-What is the distribution of the unknown?  
-Prior distribution, $p_\Theta$ or $f_\Theta$, our beliefs about the unknown before obtaining data.
+What is the "prior distribution" in the bayesian framework?  
+The distribution of the unknown. $p_\Th$ or $f_\Th$, our beliefs about the unknown before obtaining data.
 
-Then we get some observation $X$ and we generate an observation model $p_{X|\Theta}$ or $f_{X|\Theta}$
+Then we get some observation $X$ and we generate an observation model $p_{X|\Th}$ or $f_{X|\Th}$
 
 ![](unit7lec14-intro-to-bayesian-inference\bfd30e1c8ac6b0181d0c9760832e000c.png)
 
 Where do we get the prior distribution?  
 * symmetry argument - we can assume all possibilities are equally likely
 * range - known range, behavior
-* past knowledge about distribution of $\Theta$ (prior studies)
+* past knowledge about distribution of $\Th$ (prior studies)
 * arbitrary, statistician's choice.
 
 What is the output of Bayesian inference?  
@@ -126,18 +130,25 @@ This is useful but there may also be some estimation and summarization done afte
 * error analysis
 
 Asked to provide a single guess about what $\Theta$ is, how to proceed?
-* maximum a posteriori probability rule - report the largest value
-
-![](unit7lec14-intro-to-bayesian-inference\2928e4c3ef3b3374bc1ced17dd962d3f.png)
+* maximum a posteriori probability (MAP) rule - report the largest value
+\[
+\begin{align}
+\cpmf{\Th}{X}{ \cnd{\th^* }{x} } &= \max_\th \cpmf{\Th}{X}{\cnd{\th}{x}}\\
+\cpdf{\Th}{X}{ \cnd{\th^* }{x} } &= \max_\th \cpdf{\Th}{X}{\cnd{\th}{x}}\\
+\end{align}
+\]
 
 We find the $\theta$ over all $\Theta$ that maximizes the posterior distribution.
 
-We may also want to give the mean of the posterior, which is the conditional expectation estimator.
+We may also want to give the mean of the posterior, which is the conditional expectation estimator. Least Mean Squares (LMS):
 
-![](unit7lec14-intro-to-bayesian-inference\bdaf2d3c6746ae9a05e920a14d21192b.png)
-- gives you the smallest mean squared error
+\[
+\cex{\Th}{X = x}
+\]
 
-The number produced is an estimate. $\widehat{\theta} = g(x)$ based on the data $x$ which is processed by $g$. Given we don't know $x$, then we have what is called an **estimator**, a **random variable** on $X$, $\widehat{\Theta} = g(X)$.
+which gives you the smallest mean squared error
+
+The number produced is an estimate. $\thh = g(x)$ based on the data $x$ which is processed by $g$. Given we don't know $x$, then we have what is called an **estimator**, a **random variable** on $X$, $\Thh = g(X)$.
 
 Estimator may also be used to refer to the function $g$ doing the processing on the data.
 
@@ -147,18 +158,100 @@ We know what it takes to calculate conditional distributions and we have 2 estim
 
 ## Discrete Parameters, discrete observation
 
-The incoming data is discrete and the outputs of the fn are discrete. The values of $\Theta$ are alternative hypotheses.
+Situation: Incoming data ($X$) is discrete and we want to generate a model over discrete outputs. The values of $\Th$ can be considered alternative hypotheses.
+
+Versions of Bayes rule for this case:
 
 ![](unit7lec14-intro-to-bayesian-inference\e381a1caf27af4e254b55a25854642d5.png)
 
  Refer back to bayes rule lectures for info on how to determine distribution, now just assume we have observed $X$ and already have the conditional PMF of $\Theta$.
 
  Suppose $\Theta$ is
+
  ![](unit7lec14-intro-to-bayesian-inference\c2a149807003109ced079ff9e55a147c.png)
 
-we can stop here or come up with an estimate:
+We want to come up with an **estimate** using our two estimators:
 
-MAP rule: $\widehat{\theta} = 2$
-LMS rule = $\widehat{\theta} = \cex{\Theta}{X = x} = 2.2$
+1. MAP rule: $\thh = 2$
+2. LMS rule = $\thh = \cex{\Th}{X = x} = 2.2$
 
-We may also want to know how good an estimate is.
+We also want to determine our error. There are two places specifically where errors can originate:
+
+1. Our estimate - conditional probability of error
+2. Our estimator - overall probability of error
+
+First, our estimate. Recall that $\Theta$ is a hypothesis, a r.v. that can take on values $\theta$ from some discrete set with a certain probability. When we estimate or summarize by taking the most likely outcome, there's still the chance that the outcome itself is something else. So this **conditional probability of error** is the probability of selecting a hypothesis that turns out to be wrong, given by
+
+\[
+\cpr{\thh \neq \Theta}{X = x}
+\]
+
+For the MAP rule, what is the probability that something other than our chosen $\thh$ occurs? 0.4. It's the sum of all other possibilities.
+
+By thinking through what happens if we were to choose other values we can determine a property of the MAP rule which is that is minimizes this conditional probability of error.
+
+Now, the estimator. overall probability of error is the probability that our estimator is different than the actual parameters, $\pr{\Thh \neq \Theta} = \sum_X \cpr{\Thh \neq \Theta}{X = x} \pmf{X}{x}$ by the total probability theorem.
+Weighted probability of error. Another formulation just uses $\sum_\theta \cpr{\Thh \neq \Theta}{\Theta = \theta} \pmf{\Theta}{\theta}$. Use whichever is convenient. Why does the second formulation make sense?
+
+Since each term of the sum is as small as possible it means the sum is as small as possible under the MAP rule. So it's optimal.
+
+## Discrete parameter, continuous observation
+
+Applicable version of the Bayes rule:
+
+![](unit7lec14-intro-to-bayesian-inference\1563233f6dfaa24d30f8ab74cbbe2435.png)
+
+Example:
+
+We send signal $\Theta \in \{1, 2, 3\}$, letting $X = \Theta + W$ and $W \sim N(0, \sigma^2)$ indp. of $\Theta$.
+
+We want to get the different parts required for Bayes rule, so start by noticing that given $\Theta$, $X$ is just a constant + $W$. and we have
+
+![](unit7lec14-intro-to-bayesian-inference\a39a2b54aff1a182140680ddf2a8315b.png)
+
+giving us
+
+![](unit7lec14-intro-to-bayesian-inference\9c48b38d6762c17aa1f56642c6b8b4ab.png)
+
+Estimate:
+* MAP rule: $\thh = 2$
+
+Conditional probability of error:
+* $\cpr{\thh \neq \Th}{X = x}$ - which is smallest under the map rule
+
+Overall probability of error:
+\[
+\begin{align}
+\pr{\Thh \neq \Th} &= \int \iint{\cpr{\Thh \neq \Th}{X = x}\pdf{X}{x}}{x} && \text{or}\\
+&= \sum_\th \cpr{\Thh \neq \th}{\Th = \th}\pmf{\Th}{\th}
+\end{align}
+\]
+
+Since the MAP rule makes the probability of each as small as possible, we can conclude that it minimizes the conditional probability of error.
+
+## Continuous parameter, continuous observation
+
+Related bayes rule
+
+![](unit7lec14-intro-to-bayesian-inference\090b1260bc4df2564e239007bc28d438.png)
+
+Linear normal models - combine r.v.s in a linear function, and all r.v.s are known to be normal. Ex:
+- we have a noisy signal $\Th$. what we receive is given by $X = \Th + W$ and we wish to recover $\Th$.
+also multi-dimensional versions where $\Theta$ is a vector of multiple components and there are many measurements $X$. Detailed study later.
+
+estimating parameter of a uniform
+
+$X: \mathcal{U}(0, \Th)$
+
+$\Th: \mathcal{U}(0, 1)$
+
+Given we don't know the range of $X$ but we have observations about it, we want to estimate $\Theta$.
+
+Like before we want to come up with estimators to find some $\Thh$, and we can use MAP, LMS just the same. We also want to characterize performance of estimators. One way of doing that is with squared distance
+Given an estimator based on some data
+
+\[
+\cex{\left(\Thh - \Th\right)^2}{X = x}
+\]
+
+Or we can check over all possible $x$ to get the overall performance, unconditional mean squared error $\ex{\left(\Thh - \Th\right)^2}$. Talked about later.
