@@ -72,9 +72,9 @@ For a uniform random variable from $a$ to $b$ just take the position that $n = b
 Ordinary | Conditional
 ---|---
 $p_X(x)=\pr{X = x}$ | $p_{X\|A}(x) = \cpr{X=x}{A}$
-$\sum_x p_X(x) = 1$ | $\sum_x p_{X\|A}(x) = 1$
-$\ex{X} = \sum_x x p_X(x)$ | $\cex{X}{A} = \sum_x x p_{X\|A}(x)$
-$\ex{g(X)} = \sum_x g(x) p_X(x)$ | $\cex{g(X)}{A} = \sum_x g(x) p_{X\|A}(x)$
+$\sum_x p_X(x) = 1$ | $\sum_x p_{X|A}(x) = 1$
+$\ex{X} = \sum_x x p_X(x)$ | $\cex{X}{A} = \sum_x x p_{X|A}(x)$
+$\ex{g(X)} = \sum_x g(x) p_X(x)$ | $\cex{g(X)}{A} = \sum_x g(x) p_{X|A}(x)$
 
 > Symmetry of uniform random variables implies midpoint is expected value.
 
