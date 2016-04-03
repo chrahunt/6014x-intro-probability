@@ -255,3 +255,33 @@ Given an estimator based on some data
 \]
 
 Or we can check over all possible $x$ to get the overall performance, unconditional mean squared error $\ex{\left(\Thh - \Th\right)^2}$. Talked about later.
+
+Since LMS is the mean, the mean squared error is just the conditional variance.
+
+> Second moment of the exponential distribution? In qq.
+
+## Inferring the unknown bias of a coin
+
+Example demonstrates solving for a continuous unknown parameter and discrete observations.
+
+Bayes rule here:
+![](unit7lec14-intro-to-bayesian-inference\db6f8bafd4cf87f56a07ef26859de907.png)
+
+The point is to generate an expression that can take in data ($k$ heads in $n$ flips) and give information about the possible bias of the coin.
+
+Given biased coin find the posterior distribution.
+
+Start with uniform prior.
+
+Find parts of Bayes rule
+
+accumulate constants
+
+we get something called the beta distribution
+
+what if we assumed the beta distribution as a prior?
+
+we get the beta distribution anyway, nice property.
+
+Why is this property nice?  
+It allows us to recursively update the posterior as we get more observations.
