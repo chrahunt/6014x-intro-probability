@@ -272,16 +272,67 @@ The point is to generate an expression that can take in data ($k$ heads in $n$ f
 Given biased coin find the posterior distribution.
 
 Start with uniform prior.
+![](unit7lec14-intro-to-bayesian-inference\19adeb9125f755d53185f108b8e4796c.png)
 
 Find parts of Bayes rule
+![](unit7lec14-intro-to-bayesian-inference\1ffc41638074f98e3e774373916e8ecf.png)
 
 accumulate constants
 
 we get something called the beta distribution
+![](unit7lec14-intro-to-bayesian-inference\22c90696cc4802c6511912c91d4f5b09.png)
+
+don't sweat the +1s, that's just convention.
 
 what if we assumed the beta distribution as a prior?
+![](unit7lec14-intro-to-bayesian-inference\2dd439667bfc89427bedc049bc2614bc.png)
 
 we get the beta distribution anyway, nice property.
 
 Why is this property nice?  
 It allows us to recursively update the posterior as we get more observations.
+
+As we get new data it impacts our conditional distribution of $\theta$ and lets us make better predictions about its value.
+
+In the problem even though it was overwhelmingly obvious that the coin was biased towards tails our prior being biased meant that after the trials it was even.
+
+## Inferring the unknown bias of a coin - point estimates
+
+What are point estimates?  
+Actual estimates done on the posterior.
+
+We derived the posterior last time:
+
+![](unit7lec14-intro-to-bayesian-inference\b32f39baaa7a9d863a0eea03089fefbe.png)
+
+LMS == conditional expectation of $\Theta$ given specific number of heads.
+
+First we do the MAP estimate, finding the maximum by taking the derivative, setting it equal to 0, and finding $\theta$. Given our estimate, the estimator just uses the random variable.
+
+![](unit7lec14-intro-to-bayesian-inference\156b86bd8a788262148e5892a414a75c.png)
+
+Next LMS. We take the integral over all $\theta$ and use a nice equality from calculus. Remember the coefficient should be equal to that necessary to make the PDF equal 1 over the domain. But recognize that when we take the conditional expectation we're adding another $\theta$ into the mix. using the slick equality we have for both the coefficient and integral itself gives us our equality in the end.
+
+![](unit7lec14-intro-to-bayesian-inference\1b5748b38340616194fca12600f7ed5d.png)
+
+![](unit7lec14-intro-to-bayesian-inference\9c37658b835013f946170468c144f4cc.png)
+
+## Summary
+
+We are given a problem: find some variable. And we are given two distributions:
+1. Some prior distribution for our unknown ($\pmf{\Theata}{\cdot}$) - best guess
+2. Conditional distribution for some observable r.v. ($\cpmf{\X}{\Theta}{\cnd{\cdot}{\cdot}}$)
+
+Task: Find a distribution for $\Theta$ that takes into account $X$ ($\cpmf{\Theta}{X}{\cnd{\cdot}{x}}$) using an appropriate version of bayes rule
+
+summarize findings using an estimator.
+
+We covered 2 such estimators:
+1. MAP - get the best guess
+2. LMS - conditional expectation of $\Theta$
+
+Then evaluate the performance of the estimator.
+
+![](unit7lec14-intro-to-bayesian-inference\bb254bef3dbc010bc4d5303e7011ba1d.png)
+
+the actual calculations just sum or integrate the posterior distribution we found. unconditional cases require total probability or expectation theorem and average over all possible $X$.
