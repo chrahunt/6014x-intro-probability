@@ -132,5 +132,70 @@ then we can accept that $X$ is normal, but what is its estimator?
 it will be where the sum of the exponents on $\pdf{\Th}{\th}$ and $\cpdf{X}{\Th}{\cnd{X}{\th}}$ are equal to 0. Given $X = a\Th + bW$ and conditioned on $\Th = \th$, we have $X \sim N(b\mu_W + a\th, b^2\sigma_W^2)$. Let $\Th \sim N(\mu_\Th, \sigma_\Th^2)$ then we have
 
 \[
--(\th - \mu_\Th)^2\cdot\frac{1}{2\sigma_\Th^2} + -(x - (b\mu_W + a\th))^2\cdot\frac{1}{2\sigma+W^2}
+-(\th - \mu_\Th)^2\cdot\frac{1}{2\sigma_\Th^2} -(x - (b\mu_W + a\th))^2\cdot\frac{1}{2b^2\sigma_W^2}
 \]
+
+The negated squared terms are always negative, so...
+
+todo: finish derivation for problem
+
+## The case of multiple observations
+
+Measure the same variable multiple times with some different noise on each. Now we have **multiple** observations!
+
+\[
+\begin{array}{c}
+X_1 &= \Th + W_1\\
+\vdots&\\
+X_n &= \Th + W_n
+\end{array}
+\]
+
+Where $\Th \sim N(x_0, \sigma_0^2)$ (weirdo notation explained later) and $W_i \sim N(0, \sigma_i^2)$ with $\Th, W_1, \ldots, W_n$ independent.
+
+Like usual we have a bayes rule:
+
+\[
+\cpdf{\Th}{X}{\cnd{\th}{x}} = \frac{ \color{blue}{\pdf{\Th}{\th}} \color{red}{\cpdf{X}{\Th}{\cnd{x}{\th}}} }{\color{green}{\pdf{X}{x}}}\\
+\pdf{X}{x} = \int \iint{\pdf{\Th}{\th} \cpdf{X}{\Th}{\cnd{x}{\th}} }{\th}
+\]
+
+but the $X$ above stands for the vector of values of observations.
+
+So let's start on calculating $\color{red}{\text{this}}$ guy by looking at a single example, $\cpdf{X_i}{\Th}{\cnd{x_i}{\th}}$. Given $\Th = \th$, this becomes $X_i = \th + W_i \sim N(\th, \sigma_i^2)$ and so we can write
+
+\[
+\cpdf{X_i}{\Th}{\cnd{x_i}{\th}} = c_i e^{-(x_o - \th)^2 / 2\sigma_i^2}
+\]
+
+What about the vector case? This is just a shorthand for the joint PDF
+
+\[
+\begin{align}
+\cpdf{X}{\Th}{\cnd{x}{\th}} &= \cpdf{X_1,\ldots,X_n}{\Th}{\cnd{x_1,\ldots,x_n}{\Th}}\\
+&= \prod_{i=1}^n \cpdf{X_i}{\Th}{\cnd{x_i}{\th}}
+\end{align}
+\]
+
+Argue that $W_i$ are independent regardless of conditioning on $\Th$, so $X_i$ are independent and this is a known result from before. Now for the posterior...
+
+![](unit7lec15-linear-models-w-normal-noise\9a1f08193fdb0967a5a1cd76b0edfc02.png)
+
+cleaned up
+
+![](unit7lec15-linear-models-w-normal-noise\cc16cc2b061c4ddb963b36951347ec8a.png)
+
+key conclusions
+* posterior is norm
+* LMS and MAP estimates coincide
+* These estimates are linear of the form $\thh = a_0 + a_1 x_1 + \cdots + a_n x_n$.
+
+Interpretations:
+each $x_i$ gets multiplied by a cofficient.
+weighted average of $x_0$ (prior mean) and $x_i$ (observations)
+
+The weights are determined by the variances, the most weight is given to the terms with the smallest variance.
+
+We stay within random variables, linear functions, and the formula itself is nice and intuitive.
+
+In a multiple-observation problem the $X_i$s are dependent because they are all affected by $\Th$, but if $\Th$ is known then they are conditionally independent.
