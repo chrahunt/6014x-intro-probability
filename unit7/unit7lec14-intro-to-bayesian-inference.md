@@ -1,3 +1,12 @@
+---
+section: 7
+subsection: 14
+type: lecture
+title: Intro to Bayesian Inference
+---
+
+# Lecture 14: Intro to Bayesian Inference
+
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
@@ -24,6 +33,10 @@ $\newcommand{\Th}{\Theta}$
 $\newcommand{\th}{\theta}$
 $\newcommand{\Thh}{\widehat{\Theta}}$
 $\newcommand{\thh}{\widehat{\theta}}$
+$\newcommand{\unfrm}[2]{ \mathcal{U}\left( #1, #2 \right) }$
+
+$1
+$
 
 ## Overview
 
@@ -241,9 +254,9 @@ also multi-dimensional versions where $\Theta$ is a vector of multiple component
 
 estimating parameter of a uniform
 
-$X: \mathcal{U}(0, \Th)$
+$X: \unfrm{0}{\Th}$
 
-$\Th: \mathcal{U}(0, 1)$
+$\Th: \unfrm{0}{1}$
 
 Given we don't know the range of $X$ but we have observations about it, we want to estimate $\Theta$.
 
@@ -265,24 +278,34 @@ Since LMS is the mean, the mean squared error is just the conditional variance.
 Example demonstrates solving for a continuous unknown parameter and discrete observations.
 
 Bayes rule here:
-![](unit7lec14-intro-to-bayesian-inference\db6f8bafd4cf87f56a07ef26859de907.png)
+
+\[
+\begin{align}
+\cpdf{\Th}{K}{\cnd{\th}{k}} &= \frac{\pdf{\Th}{\th}\cpmf{K}{\Th}{\cnd{k}{\th}}}{\pmf{K}{k}}\\
+\pmf{K}{k} &= \int \iint{ \pdf{\Th}{\th^\prime}\cpmf{K}{\Th}{\cnd{k}{\th^\prime}}}{\th^\prime}
+\end{align}
+\]
 
 The point is to generate an expression that can take in data ($k$ heads in $n$ flips) and give information about the possible bias of the coin.
 
 Given biased coin find the posterior distribution.
 
-Start with uniform prior.
-![](unit7lec14-intro-to-bayesian-inference\19adeb9125f755d53185f108b8e4796c.png)
+The standard example uses:
 
-Find parts of Bayes rule
-![](unit7lec14-intro-to-bayesian-inference\1ffc41638074f98e3e774373916e8ecf.png)
+* coin with bias $\Th$, which has prior $\pdf{\Th}{\cdot}$
+* for the below, fix $n$ and let $K$ be the number of heads.
+* Assume $\pdf{\Th}{\cdot} \sim \unfrm{0}{1}$
 
-accumulate constants
+Find parts of Bayes rule, assuming $\th \in [0, 1]$
 
-we get something called the beta distribution
-![](unit7lec14-intro-to-bayesian-inference\22c90696cc4802c6511912c91d4f5b09.png)
+\[
+\begin{align}
+\cpdf{\Th}{K}{\cnd{\th}{k}} &= \frac{\color{blue}{1\cdot\binom{n}{k}}\color{red}{\th^k(1 - \th)^{n - k}}}{\color{blue}{\pmf{K}{k}}}\\
+&= \color{blue}{\frac{1}{d(n, k)}}\color{red}{\th^k(1 - \th)^{n - k}} && \text{accumulating constants}
+\end{align}
+\]
 
-don't sweat the +1s, that's just convention.
+The last expression is the *beta distribution* with parameters $(k + 1, n - k + 1)$. Don't sweat the +1s, that's just convention.
 
 what if we assumed the beta distribution as a prior?
 ![](unit7lec14-intro-to-bayesian-inference\2dd439667bfc89427bedc049bc2614bc.png)
@@ -303,7 +326,9 @@ Actual estimates done on the posterior.
 
 We derived the posterior last time:
 
-![](unit7lec14-intro-to-bayesian-inference\b32f39baaa7a9d863a0eea03089fefbe.png)
+\[
+\cpdf{\Th}{K}{\cnd{\th}{k}} = \frac{1}{d(n, k)}\th^k(1 - \th)^{n - k}
+\]
 
 LMS == conditional expectation of $\Theta$ given specific number of heads.
 
@@ -320,10 +345,10 @@ Next LMS. We take the integral over all $\theta$ and use a nice equality from ca
 ## Summary
 
 We are given a problem: find some variable. And we are given two distributions:
-1. Some prior distribution for our unknown ($\pmf{\Theata}{\cdot}$) - best guess
-2. Conditional distribution for some observable r.v. ($\cpmf{\X}{\Theta}{\cnd{\cdot}{\cdot}}$)
+1. Some prior distribution for our unknown ($\pmf{\Th}{\cdot}$) - best guess
+2. Conditional distribution for some observable r.v. ($\cpmf{X}{\Th}{\cnd{\cdot}{\cdot}}$)
 
-Task: Find a distribution for $\Theta$ that takes into account $X$ ($\cpmf{\Theta}{X}{\cnd{\cdot}{x}}$) using an appropriate version of bayes rule
+Task: Find a distribution for $\Th$ that takes into account $X$ ($\cpmf{\Theta}{X}{\cnd{\cdot}{x}}$) using an appropriate version of bayes rule
 
 summarize findings using an estimator.
 
