@@ -5,7 +5,7 @@ type: lecture
 title: Least mean squares (LMS) estimation
 ---
 
-# Lecture 15: Least mean squares (LMS) estimation
+# Lecture 16: Least mean squares (LMS) estimation
 
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
@@ -134,7 +134,7 @@ The performance is just that of the LMS, and we know
 
 So there are three parts to this exercise. Using the following facts:
 
-$\var(\unfrm{a}{b}) = \frac{(b - a)^2}{12}$
+$\var{\unfrm{a}{b}} = \frac{(b - a)^2}{12}$
 
 ![](unit7lec16-lms-estimation\188794da637c1d6f46e7f34bee88a656.png)
 
@@ -150,4 +150,67 @@ Now what about the overall expectation? This is going to have the form
 
 We aren't given $X$ but we can get it from the joint PDF by taking the marginal then plugging it into the eq above.
 
-Notice that we can kind of estimate the expected value because it is going to be an avarage of the variance that we have graphed and for that we can see it will be somewhere in $[0, \frac{1}{3}]$ and closer to $\frac{1}{3}$ than 0.
+Notice that we can kind of estimate the expected value because it is going to be an average of the variance that we have graphed and for that we can see it will be somewhere in $[0, \frac{1}{3}]$ and closer to $\frac{1}{3}$ than 0.
+
+## The multidimensional case
+
+Generalize to multiple parameters and multiple variables.
+Nothing in our arguments requires that $\Th$ or $X$ are single dimensioned
+
+![](unit7lec16-lms-estimation\46a264e5987974122fea61f57a57072f.png)
+
+![](unit7lec16-lms-estimation\16ae32e8cea1c143d40ab1b6adece373.png)
+
+![](unit7lec16-lms-estimation\6b74a326127b276a0ed3461deb8b4344.png)
+
+
+What are the challenges of LMS estimation?  
+1. The model $\cpdf{X}{\Th}{\cnd{x}{\th}}$ (required for bayes rule) may not be available
+2. It can be hard to compute/implement/analyze
+
+    The denominator is an integral ![](unit7lec16-lms-estimation\7ff675012969537226ae84926e79441f.png)
+
+but even given that, we would still have to do the expected value of $\Th_j$ which is a multi-dimensional integral over all the possible thetas
+
+![](unit7lec16-lms-estimation\291d724de7753b4bb40b7c4d2868b437.png)
+
+
+## Properties of the LMS estimation error
+
+Define estimator
+
+![](unit7lec16-lms-estimation\e1ba4fb6d9ab3c985c6fce0daa503332.png)
+
+define estimator error
+
+![](unit7lec16-lms-estimation\f3a7603da97adc3674782f6ead7222ed.png)
+
+show error is 0
+
+![](unit7lec16-lms-estimation\851f0de1367bddd03246574df7150315.png)
+
+by law of iterated expectations
+
+derive conditional error is 0
+
+![](unit7lec16-lms-estimation\910e732225e1211d26317a37173930cc.png)
+
+because $\Thh$ conditioned on $X = x$ is just $\thh$, a constant.
+
+derive covariance is 0
+
+![](unit7lec16-lms-estimation\abe4f7c798d7cc685f15244b9b282c99.png)
+
+from our previous result and the law of iterated expectations.
+
+Now consider
+
+![](unit7lec16-lms-estimation\55a2fd72f1cf4b7a712f4e04a18b954d.png)
+
+then because they have 0 covariance we have
+
+![](unit7lec16-lms-estimation\25209c25423fd72221e156e95466ac8b.png)
+
+this can also be derived from the law of total variances (in different notation).
+
+This is foundational for the general theory of least-squares estimation. Just an interesting aside.
