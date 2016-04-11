@@ -1,3 +1,12 @@
+---
+section: 6
+subsection: 13
+type: lecture
+title: Conditional expectation and variance revisited; Sum of a random number if independent r.v.s
+---
+
+# Lecture 13: Conditional expectation and variance revisited; Sum of a random number if independent r.v.s
+
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
@@ -21,7 +30,8 @@ $\DeclareMathOperator{\cov}{cov}$
 $\newcommand{\ninfty}{{-\infty}}$
 $\newcommand{\abs}[1]{ \left|#1\right| }$
 
-# Overview
+
+## Overview
 
 * A more abstract version of the conditional expectation: $\cex{X}{Y}$
   * Viewing it as a random variable
@@ -33,6 +43,7 @@ $\newcommand{\abs}[1]{ \left|#1\right| }$
   * mean
   * variance
 
+
 ## Conditional expectation of a random variable
 
 Let $h$ be a function, say $h(x) = x^2$ for all $x$.
@@ -40,7 +51,7 @@ Let $h$ be a function, say $h(x) = x^2$ for all $x$.
 Given a random variable $X$, what is $h(X)$?  
 $h(X)$ is the random variable that takes the value $x^2$ if $X$ happens to take the value $x$.
 
-A random variable is the same thing. It takes a value and is that value in a numerical sense but also has the properties of a random variable.
+A random variable is the same thing. It takes a value and is that value in a numerical sense but also has the properties of a random variable, ie the values that it takes on are distributed according to a PDF/PMF.
 
 function of a random variable is itself a random variable that takes the value of the random variable
 
@@ -65,7 +76,11 @@ It is a fn of $Y$, and a random variable.
 
 what it means to be a random variable - has a distribution (PMF or PDF), mean, variance, works as a random variable, etc.
 
+
 ## The law of iterated expectations
+
+aka the [Law of total expectation](https://en.wikipedia.org/wiki/Law_of_total_expectation).
+
 
 $\triangleq$ - equal to by definition
 
@@ -88,15 +103,18 @@ It is the same in continuous cases just using integral/PDF where necessary.
 
 The law of iterated expectations is just an abstracted version of the total expectation theorem. This is powerful as it turns out and avoids having to deal with discrete or cts r.v.s individually.
 
+
 ## Stick-breaking revisited
 
 ![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\166c671da54f742a7dc0c77bb9222626.png)
 
 In the first case $\cex{X}{Y = y} = \frac{y}{2}$ this is an equality between numbers whereas $\cex{X}{Y} = \frac{Y}{2}$ is an equality between random variables.
 
+
 ## Forecast revisions
 
 ![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\111d091d103d08a110f12417c0caabf2.png)
+
 
 ## The conditional variance as a random variable
 
@@ -114,6 +132,7 @@ In the latter case everything is the same the conditional universe just goes dow
 expected value being a random variable means it has its own variance.
 
 > You can have unspecified functions on the conditional universe in a sub-expression because they are resolved later by specification in the outer expression, but you can't have an un-conditioned internal expression.
+
 
 ## Derivation of the law of total variance
 
@@ -133,6 +152,7 @@ Want to show $\var{X} = \ex{\cvar{X}{Y}} + \var{\cex{X}{Y}}$
 \]
 
 as required.
+
 
 ## A simple example
 
@@ -181,6 +201,7 @@ finally,
 
 which can be plugged into the law of total variance to get $\frac{37}{48}$.
 
+
 ## Section means and variances
 
 Intuition-building. Showing how we may go through a calculation
@@ -202,6 +223,7 @@ now for total variance
 
 The explanation at the bottom has it. The variance in the class is broken into two sources, within the sections themselves and between the two sections.
 
+
 ## Mean of the (sum of (a random number of r.v.s))
 
 > When faced with a complicated problem, try to condition on some information that will make the problem easier.
@@ -213,6 +235,7 @@ which makes intuitive sense, but it is always good to have a formal derivation.
 Note that we can turn the equalities between numbers into an equality between r.v.s because the equations are true for any choice of value from the space of the r.v.s involved.
 
 Assuming the $X_i$ are identically distributed makes things much simpler.
+
 
 ## Variance of the (sum of (a random number of r.v.s))
 

@@ -1,4 +1,11 @@
-# Lec. 7 - conditioning on a random variable, independence of random variables
+---
+section: 4
+subsection: 7
+type: lecture
+title: Conditioning on a random variable, independence of random variables
+---
+
+# Lecture 7: Conditioning on a random variable, independence of random variables
 
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
@@ -6,8 +13,11 @@ $\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
 $\newcommand{\cex}[2]{\mathbf{E}\left[#1\,\middle|\,#2\right]}$
 $\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
 $\newcommand{\var}[1]{\text{var}\left(#1\right)}$
+$\newcommand{\pmf}[2]{p_{#1}\left(#2\right)}$
+$\newcommand{\cpmf}[3]{ \pmf{\left.#1\middle|#2\right.}{#3} }$
 
-Topics:
+## Overview
+
 * Conditional PMFs
     * Conditional expectations
     * Total expectation theorem
@@ -16,6 +26,7 @@ Topics:
     * Variance properties
 * The variance of the binomial
 * The hat problem: mean and variance
+
 
 Connections:
 * unit 2 lecture 2 - conditioning with probabilities
@@ -48,17 +59,38 @@ p_{X|Y,Z}(x|y,z) = \cpr{X=x}{Y=y,Z=z}
 
 > If a variable isn't bound then it doesn't necessarily make the statement syntactically incorrect, it just means an expression is a function of the unbound variables.
 
+
 ## Conditional expectations
 
 In these cases as we move from previous results to full multivariable functions of random variables, we consider the case where an event is actually a random variable being some specific value.
 
 ![](unit4lec7-conditioning-on-a-random-variable\64b7545a29dd29ae3cd9e7e392cab3c8.png)
 
+
 ## Total probability and expectation theorems
 
-![](unit4lec7-conditioning-on-a-random-variable\9011ad93c1bf8874618f6cb2f4cca31e.png)
+Given $A_1,\ldots, A_n$ that partition $\Omega$, let $Y = \{y_1, \ldots, y_n\}$ and $A_i = \{Y = y_i\}$. Let $X$ be a r.v. and consider the PMF of $X$
 
-Can be used to divide and conquer complicated models.
+\[
+\begin{align}
+\pmf{X}{x} &= \pr{A_1}\cpmf{X}{A_1}{x} + \cdots + \pr{A_n}\cpmf{X}{A_n}{x}\\
+&= \color{red}{\sum_y \pmf{Y}{y}\cpmf{X}{Y}{\cnd{x}{y}}}
+\end{align}
+\]
+
+What about the expected value of $X$?
+
+\[
+\begin{align}
+\ex{X} &= \pr{A_1}\cex{X}{A_1} + \cdots + \pr{A_n}\cex{X}{A_n}\\
+&= \color{indigo}{\sum_y \pmf{Y}{y}\cex{X}{Y=y}}
+\end{align}
+\]
+
+Fine print: This is also valid when $Y$ is a discrete r.v. that ranges over an infinite set, as long as $\ex{\abs{X}} < \infty$.
+
+The usefulness of these theorems is that it can be used to divide and conquer complicated models.
+
 
 ## Independence of random variables
 
@@ -70,14 +102,18 @@ In the real world independence is used to model situations where each of the ran
 
 Intuitively, a deterministic r.v. does not provide information about non deterministic r.v.s
 
+
 ## Example: independence and conditional independence
 
 ![](unit4lec7-conditioning-on-a-random-variable\5d81b9c4a8ad0f51960cb061c719f26b.png)
 
 We do have independence in the blue universe, checked by looking at whether the joint PMF factors as a product of marginal PMFs.
 
+
 ## Independence and expectations
 
 ![](unit4lec7-conditioning-on-a-random-variable\3c8556026315c4e45315dfc049efad02.png)
 
 ## Independence, variances, and the binomial variance
+
+<!-- TODO -->
