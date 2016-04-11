@@ -1,3 +1,12 @@
+---
+section: 6
+subsection: 11
+type: lecture
+title: Derived Distributions
+---
+
+# Lecture 11: Derived Distributions
+
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
@@ -19,7 +28,6 @@ $\DeclareMathOperator{\exp}{exp}$
 $\newcommand{\abs}[1]{ \left|#1\right| }$
 
 
-# Lecture 11: Derived Distributions
 
 ## Overview
 

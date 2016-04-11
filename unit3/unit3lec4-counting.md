@@ -1,6 +1,17 @@
-# Lec. 4: Counting
+---
+section: 3
+subsection: 4
+type: lecture
+title: Counting
+---
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
+# Lecture 4: Counting
+
+$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
+$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
+
+## Overview
+
 Focus:
 Develop methods for counting number of elements of a set described in some implicit way.
 

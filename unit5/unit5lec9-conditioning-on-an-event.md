@@ -1,4 +1,11 @@
-# Lec 9: Conditioning on an event; Multiple r.v.'s
+---
+section: 5
+subsection: 9
+type: lecture
+title: Conditioning on an event; Multiple r.v.s
+---
+
+# Lecture 9: Conditioning on an event; Multiple r.v.'s
 
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
@@ -14,7 +21,9 @@ $\newcommand{\pdf}[2]{f_{#1}\left(#2\right)}$
 $\newcommand{\cpdf}[3]{ \pdf{\left.#1\middle|#2\right.}{#3} }$
 $\newcommand{\if}{\text{if }}$
 
-Overview:
+
+## Overview
+
 * Conditioning a r.v. on an event
   * Conditional PDF
   * Conditional expectations

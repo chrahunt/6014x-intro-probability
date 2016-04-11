@@ -1,3 +1,12 @@
+---
+section: 6
+subsection: 12
+type: lecture
+title: Lecture 12: Sums of independent r.v.s; Covariance and correlation
+---
+
+# Lecture 12: Sums of independent r.v.s; Covariance and correlation
+
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
@@ -19,6 +28,7 @@ $\DeclareMathOperator{\exp}{exp}$
 $\DeclareMathOperator{\cov}{cov}$
 $\newcommand{\ninfty}{{-\infty}}$
 $\newcommand{\abs}[1]{ \left|#1\right| }$
+
 
 ## Overview
 
@@ -56,6 +66,7 @@ A way to quickly carry out convolution check
 
 Instead of going through all the combinations of numbers that add up to three in the straightforward way (loop and ask yourself for each number), just do the calculation on the graph itself to move $Y$ to the corresponding $X$s. That done, multiply values at the same entries.
 
+
 ## Sum of cts r.v.s
 
 Let $Z = X + Y$ with $X, Y$ cts, independent, and with known PDFs.
@@ -85,6 +96,7 @@ but in general this takes the same process of computation as in the discrete cas
 
 the range of the integral can, in general, be pared down based on the behavior of the contained functions. Because the integral is just like a sum if you have a product with something that will be 0 over some range being integrated over then the value of the integral over that range would be zero.
 
+
 ## Sum of independent Normal r.v.s
 
 ![](unit6lec12-sums-of-rvs-covariance-correlation\ded76e49ec5cb2c1765c98e58f674126.png)
@@ -93,6 +105,7 @@ For finitely many normal r.v.s the extension is just to use induction on somethi
 
 Why is it important that sums of normal r.v.s are themselves normal?  
 Because it implies that when we start with normal r.v.s we're generally going to stay in that realm. Linear functions, linear combinations all will be normal still.
+
 
 ## Covariance
 

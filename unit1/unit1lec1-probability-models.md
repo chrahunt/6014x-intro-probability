@@ -1,3 +1,10 @@
+---
+section: 1
+subsection: 1
+type: lecture
+title: Probability Models and Axioms
+---
+
 # Probability Models and Axioms
 <!-- not deleted on drive -->
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$

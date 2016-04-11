@@ -1,4 +1,11 @@
-# Lec. 6 Variance; Conditioning on an event; Multiple r.v.s
+---
+section: 4
+subsection: 6
+type: lecture
+title: Variance; Conditioning on an event; Multiple r.v.s
+---
+
+# Lecture 6: Variance; Conditioning on an event; Multiple r.v.s
 
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
@@ -6,6 +13,8 @@ $\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
 $\newcommand{\cex}[2]{\mathbf{E}\left[#1\,\middle|\,#2\right]}$
 $\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
 $\newcommand{\var}[1]{\text{var}\left(#1\right)}$
+
+## Overview
 
 * Variance and its properties
 	* Variance of the bernoulli and uniform PMFs

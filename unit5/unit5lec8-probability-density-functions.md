@@ -1,4 +1,11 @@
-# Unit Overview
+---
+section: 5
+subsection: 8
+type: lecture
+title: Probability Density Functions
+---
+
+# Lecture 8: Probability Density Functions
 
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
@@ -9,13 +16,13 @@ $\newcommand{\var}[1]{\text{var}\left(#1\right)}$
 $\newcommand{\d}{\text{d}}$
 $\newcommand{\iint}[2]{\!#1\,\d#2}$
 
-Expectation, conditioning, independence in the context of continuous random variables. Continuous random variables use calculus, integrals to operate.
+## Unit Overview
 
-# Lecture 8 Probability Density Functions
+Expectation, conditioning, independence in the context of continuous random variables. Continuous random variables use calculus, integrals to operate.
 
 Probability density functions - an object that describes a continuous random variables
 Expectation and variance
-Cumulative distribution function - unifies discretediscrete and continuous random variables.
+Cumulative distribution function - unifies discrete and continuous random variables.
 
 Uniform, exponential, normal
 

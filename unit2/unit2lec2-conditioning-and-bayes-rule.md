@@ -1,4 +1,11 @@
-# Lec 2: Conditioning and Baye's rule
+---
+section: 2
+subsection: 2
+type: lecture
+title: Conditioning and Bayes Rule
+---
+
+# Lecture 2: Conditioning and Baye's rule
 
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$

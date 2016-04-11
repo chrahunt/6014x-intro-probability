@@ -1,4 +1,11 @@
-# Unit 5 Lec 10 - Conditioning on a Random Variable, Independence, Bayes' Rule
+---
+section: 5
+subsection: 10
+type: lecture
+title: Conditioning on a Random Variable, Independence, Bayes' Rule
+---
+
+# Lecture 10: Conditioning on a Random Variable, Independence, Bayes' Rule
 
 $\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
@@ -17,7 +24,8 @@ $\newcommand{\if}{\text{if }}$
 $\newcommand{\exp}{\text{exp}}$
 $\DeclareMathOperator{\exp}{exp}$
 
-Overview:
+## Overview
+
 * Conditioning $X$ on $Y$, especially when using
   * Total probability theorem
   * Total expectation theorem

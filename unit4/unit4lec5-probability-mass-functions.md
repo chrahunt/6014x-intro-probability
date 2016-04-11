@@ -1,10 +1,18 @@
-# Lec. 5: Probability Mass Functions
+---
+section: 4
+subsection: 5
+type: lecture
+title: Probability Mass Functions
+---
+
+# Lecture 5: Probability Mass Functions
 
 $\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
 $\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
 $\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
 $\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
 $\newcommand{\pmf}[2]{p_{#1}\left(#2\right)}$
+
 
 ## Overview
 

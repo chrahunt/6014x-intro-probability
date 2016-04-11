@@ -1,4 +1,16 @@
-# Lec 3: Independence
+---
+section: 2
+subsection: 3
+type: lecture
+title: Independence
+---
+
+# Lecture 3: Independence
+
+$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
+$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
+
+## Overview
 
 What is independence?  
 When the conditional and unconditional probabilities between two events are the same.
