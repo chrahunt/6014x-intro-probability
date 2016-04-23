@@ -2,7 +2,7 @@
 section: 6
 subsection: 12
 type: lecture
-title: Lecture 12: Sums of independent r.v.s; Covariance and correlation
+title: Sums of independent r.v.s; Covariance and correlation
 ---
 
 # Lecture 12: Sums of independent r.v.s; Covariance and correlation

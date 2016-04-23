@@ -35,8 +35,6 @@ $\newcommand{\Thh}{\widehat{\Theta}}$
 $\newcommand{\thh}{\widehat{\theta}}$
 $\newcommand{\unfrm}[2]{ \mathcal{U}\left( #1, #2 \right) }$
 
-$1
-$
 
 ## Overview
 

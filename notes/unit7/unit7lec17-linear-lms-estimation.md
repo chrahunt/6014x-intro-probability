@@ -40,7 +40,7 @@ $\newcommand{\unfrm}[2]{ \mathcal{U}\left( #1, #2 \right) }$
 
 ## Overview
 
-The conditional expectations $\cex{\Th}{X} hard to compute due to:
+The conditional expectations $\cex{\Th}{X}$ hard to compute due to:
 * complicated non-linear structure
 * incomplete information/unknown distributions
 * hard to calculate event with known distributions
@@ -50,6 +50,7 @@ For this reason we focus on linear estimators $\Thh = aX + b$ and look at minimi
 * Mathematical properties of LLMS (variance, expected value, multidimensional case, )
 * Example
 * How the estimator can be used
+
 
 ## LLMS formulation
 
@@ -90,6 +91,7 @@ then we optimize by finding $\frac{\d}{\d a} = 0$
 ![](unit7lec17-linear-lms-estimation\0a182471fbe49eff8fd2b819faca53d4.png)
 
 and we find
+
 \[
 \Thh_L = \ex{\Th} + \frac{\cov(\Th, X)}{\var{X}}\left(X - \ex{X}\right)
 \]
@@ -234,3 +236,7 @@ We can also consider estimators of the type $\Thh = a_1 X + a_2 X^2 + a_3 X^3 + 
 We can also mix and match
 
 https://en.wikipedia.org/wiki/Linear_regression
+
+![](unit7lec17-linear-lms-estimation\8b64f8f13de6f4a1e10ee128ab96ba46.png)
+
+Different choices give us different performance.
