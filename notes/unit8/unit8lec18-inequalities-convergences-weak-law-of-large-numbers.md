@@ -72,6 +72,8 @@ The Chebyshev inequality is stronger when $a$ is large, but it is possible to ge
 
 ## Weak law of large numbers
 
+essentially, the average of the sum of a sequence of i.i.d. r.v.s converges to the expected value of the unknown.
+
 long experiment where we select a lot of r.v.s
 
 ![](unit8lec18-inequalities-convergences-weak-law-of-large-numbers\f0d0b972d7511e40f327c0b1d77764d6.png)
