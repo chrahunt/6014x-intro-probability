@@ -48,14 +48,14 @@ That it is positive.
 
 Comparison of discrete and continuous conditionings:
 
-![](unit5lec9-conditioning-on-an-event\e523b45e6fd85c0ad11d98eaa003b3c2.png)
+![](unit5lec9-conditioning-on-an-event/e523b45e6fd85c0ad11d98eaa003b3c2.png)
 
 What is the definition of a conditional PDF?  
 \[
 \cpr{X\in B}{A} = \int_B \iint{ \cpdf{X}{A}{x} }{x}
 \]
 
-![derivation of conditional PDF](unit5lec9-conditioning-on-an-event\a45e7decd4b7c523861f9df2d6917032.png)
+![derivation of conditional PDF](unit5lec9-conditioning-on-an-event/a45e7decd4b7c523861f9df2d6917032.png)
 
 \[
 \cpdf{X}{X\in A}{x} = \begin{cases}
@@ -79,7 +79,7 @@ discrete | continuous
 $\ex{X} = \sum_x x\pmf{X}{x}$ | $\ex{X} = \int\iint{ x \pdf{X}{x} }{x}$
 $\cex{X}{A} = \sum_x x\cpmf{X}{A}{x}$ | $\cex{X}{A} = \int\iint{ x \cpdf{X}{A}{x} }{x}$
 
-![conditional expectation in continuous case](unit5lec9-conditioning-on-an-event\1cbd57f6ee10f68130ba4fa2b4c56086.png)
+![conditional expectation in continuous case](unit5lec9-conditioning-on-an-event/1cbd57f6ee10f68130ba4fa2b4c56086.png)
 
 Same as in the discrete case, just with integrals instead of summations.
 
@@ -100,7 +100,7 @@ The answer will be given by comparing the probabilities:
 1. A new lightbulb lasts time $x$, and
 2. A lightbulb used for time $t$ will last time $x$
 
-![](unit5lec9-conditioning-on-an-event\6a3217edbddd683c6335ba695e2b0f28.png)
+![](unit5lec9-conditioning-on-an-event/6a3217edbddd683c6335ba695e2b0f28.png)
 
 And it turns out these are the same.
 
@@ -117,12 +117,12 @@ By Memorylessness, even if we start at some other time $t$, $\cpr{t \le T \le t 
 
 ## Total probability and expectation theorems
 
-![continuous total probability and expectation](unit5lec9-conditioning-on-an-event\54077ad34dc1937999c24771e0df1780.png)
+![continuous total probability and expectation](unit5lec9-conditioning-on-an-event/54077ad34dc1937999c24771e0df1780.png)
 
 Starting with the CDF and taking the derivative of both sides we arrive at the total probability theorem. Multiplying both sides by $x$ and integrating gives us the total expectation theorem. Both have the same interpretation as a weighted sum of the output of the corresponding PDFs and expectations against the probability of the input falling into each one of the events $A_i$.
 
 Example:
-![](unit5lec9-conditioning-on-an-event\5a8c242421873d7d060d52608b97d055.png)
+![](unit5lec9-conditioning-on-an-event/5a8c242421873d7d060d52608b97d055.png)
 
 Given descriptions of individual events they can be combined using total probability and total expectation to get an overall picture of the probability and the total expected value. For the graph, the work of determining how tall to make each section is done for us by splitting between the two given probabilities (because otherwise the height of the uniform probabilities would be 1/2).
 
@@ -144,9 +144,9 @@ $X$ is not discrete because it has a continuous part. $X$ is not continuous beca
 What do we use to handle mixed distributions?  
 CDF - it is well-defined for all sorts of probabilities.
 
-![creating a CDF algebraically](unit5lec9-conditioning-on-an-event\11355fccb3cb3ba23c5446258c9985d7.png)
+![creating a CDF algebraically](unit5lec9-conditioning-on-an-event/11355fccb3cb3ba23c5446258c9985d7.png)
 
-![creating a CDF graphically](unit5lec9-conditioning-on-an-event\74ed501bfaba46219061baadddb13cf7.png)
+![creating a CDF graphically](unit5lec9-conditioning-on-an-event/74ed501bfaba46219061baadddb13cf7.png)
 
 ## Joint PDFs
 
@@ -154,22 +154,22 @@ Facts:
 * it's not enough to have individual probabilities for defining joint probabilities, we also need joint PDFs.
 
 The notation for the joint PDFs is similar to the one for joint PMFs
-![notation](unit5lec9-conditioning-on-an-event\58f5d4304bcf0cbd28dbaa3fbc6bdbc1.png)
+![notation](unit5lec9-conditioning-on-an-event/58f5d4304bcf0cbd28dbaa3fbc6bdbc1.png)
 
 Value of joint PDF compared with joint PMF:
-![](unit5lec9-conditioning-on-an-event\e7fe328ebcaf854d9e72b2687a34b10d.png)
+![](unit5lec9-conditioning-on-an-event/e7fe328ebcaf854d9e72b2687a34b10d.png)
 
 Sums are replaced by integrals, and the double integral gives a volume over a sheet of probability spread across a surface. This isn't a product of a proof, just
 
 Two random variables are **jointly continuous** if they can be described by a joint PDF.
 
-![Joint PDF visualization](unit5lec9-conditioning-on-an-event\13e1f349dfa2e9ea42d4e3feaac57f85.png)
+![Joint PDF visualization](unit5lec9-conditioning-on-an-event/13e1f349dfa2e9ea42d4e3feaac57f85.png)
 
 This volume above $B$ is exactly what the joint PDF calculates.
 
 Joint PDFs can be examined concretely and more easily using a rectangle example:
 
-![joint PDF rectangle graph](unit5lec9-conditioning-on-an-event\5bd2668a1f1e261b814c1cf2da1e47ba.png)
+![joint PDF rectangle graph](unit5lec9-conditioning-on-an-event/5bd2668a1f1e261b814c1cf2da1e47ba.png)
 
 \[
 \pr{a\le X \le b, c \le Y \le d} = \int_c^d \iint{ \int_a^b \iint{ \pdf{X,Y}{x, y} }{x} }{y}
@@ -185,7 +185,7 @@ So $\pdf{X,Y}{x,y}$ gives us the probability per unit area.
 
 Something about joint curves having probability 0 because they only have area. Example incoming. Let $X = Y$, then consider their joint probability.
 
-![](unit5lec9-conditioning-on-an-event\486307bda981f07bc8175847377c1742.png)
+![](unit5lec9-conditioning-on-an-event/486307bda981f07bc8175847377c1742.png)
 
 Because it is just a line they have 0 volume so their joint probability is 0 so they are not joint continuous. For joint continuity we need their relationship to be spread out. $\text{area}(B) = 0 \implies \pr{(X, Y)\in B} = 0$. i.e. the set $B$ needs to have some kind of area, can't just be a line or empty.
 
@@ -193,19 +193,19 @@ Because it is just a line they have 0 volume so their joint probability is 0 so 
 
 First we can determine the form by following from the definition of the PMF and making our usual integral substitution.
 
-![comparing PMF and PDF ](unit5lec9-conditioning-on-an-event\6380348adbd9a447d2f6aefeb76a9bc6.png)
+![comparing PMF and PDF ](unit5lec9-conditioning-on-an-event/6380348adbd9a447d2f6aefeb76a9bc6.png)
 
 But let's think through a proof. We will start with the CDF on $X$ and by its relationship to the PDF show that the equation above holds. What is the CDF on $X$?
 
-![](unit5lec9-conditioning-on-an-event\20e3608361fa5baad31e40e8c959170d.png)
+![](unit5lec9-conditioning-on-an-event/20e3608361fa5baad31e40e8c959170d.png)
 
 If we think through a graphical example, we can figure how this could be represented algebraically
 
-![](unit5lec9-conditioning-on-an-event\fa92368210979486064211c8dff58109.png)
+![](unit5lec9-conditioning-on-an-event/fa92368210979486064211c8dff58109.png)
 
 So the CDF is everything below some little $x$. To get that "everything", you can integrate the joint PDF across all possible values of the other symbol.
 
-![](unit5lec9-conditioning-on-an-event\463eb71e1589329593c461a2baae7a28.png)
+![](unit5lec9-conditioning-on-an-event/463eb71e1589329593c461a2baae7a28.png)
 
 then since the PDF is just the derivative of the CDF and because of the fact below, it is just the inner integral.
 
@@ -215,17 +215,17 @@ Question: Is the PDF requirement about single points just a statement about what
 
 Example of recovering the marginal PDFs from the joint PDF:
 
-![](unit5lec9-conditioning-on-an-event\d9bac2555f01de9495e3050a0528236e.png)
+![](unit5lec9-conditioning-on-an-event/d9bac2555f01de9495e3050a0528236e.png)
 
 ## Continuous analogs of various properties
 
 For more than 2 random variables, just switch sums for integrals and pmfs with pdfs
 
-![](unit5lec9-conditioning-on-an-event\0dae7041ae7a7d6f5ad2a83eefcecb32.png)
+![](unit5lec9-conditioning-on-an-event/0dae7041ae7a7d6f5ad2a83eefcecb32.png)
 
 Functions of more than one random variable.
 
-![](unit5lec9-conditioning-on-an-event\23aaf3ead1561ecf24ff76f110b13b5c.png)
+![](unit5lec9-conditioning-on-an-event/23aaf3ead1561ecf24ff76f110b13b5c.png)
 
 Make expected value rule and use that to show linearity of expectations.
 
@@ -234,4 +234,4 @@ Make expected value rule and use that to show linearity of expectations.
 We know that we can recover the PDF of one variable from its CDF by taking the derivative, but now we consider two variables. How do we get the joint PDF?  
 We take the double integral across the CDF.
 
-![](unit5lec9-conditioning-on-an-event\39f93ab4320d1d34b39bdc80af692f2d.png)
+![](unit5lec9-conditioning-on-an-event/39f93ab4320d1d34b39bdc80af692f2d.png)

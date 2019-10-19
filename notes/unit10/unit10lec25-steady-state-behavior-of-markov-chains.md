@@ -33,7 +33,7 @@ finding the probability of a specific path through the state transition is just 
 
 Finding multiple paths in a brute force way involves coming up with all the paths of a certain length that start and end at the given states.
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\0ce069bb30d049d7154ace3548046695.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/0ce069bb30d049d7154ace3548046695.png)
 
 ## Recurrent and transient states
 
@@ -45,11 +45,11 @@ it's pretty clear that the class a chain starts in implies something about where
 
 The states in a recurrent class are periodic if they can be grouped into $d > 1$ groups so that all transitions from one group lead to the next group.
 
-![state transition diagram with periodic states in two groups](unit10lec25-steady-state-behavior-of-markov-chains\0eff2ce6cff773a34ad9160610afaaeb.png)
+![state transition diagram with periodic states in two groups](unit10lec25-steady-state-behavior-of-markov-chains/0eff2ce6cff773a34ad9160610afaaeb.png)
 
-![state transition diagram with periodic states in three groups](unit10lec25-steady-state-behavior-of-markov-chains\1ec6d511f507ed6bf42dcbbf53b71600.png)
+![state transition diagram with periodic states in three groups](unit10lec25-steady-state-behavior-of-markov-chains/1ec6d511f507ed6bf42dcbbf53b71600.png)
 
-![example of identifying the groups in a periodic state transition diagram](unit10lec25-steady-state-behavior-of-markov-chains\cfef284474dfe015d8fd4eb72ed91f95.png)
+![example of identifying the groups in a periodic state transition diagram](unit10lec25-steady-state-behavior-of-markov-chains/cfef284474dfe015d8fd4eb72ed91f95.png)
 
 as soon as you have a self transition, the markov chain is not periodic since no matter what that state is colored it would be possible to have two consecutive timesteps with that group.
 
@@ -66,11 +66,11 @@ We have seen two situations that prevent this from happening:
 1. periodicity implies it will not converge
 2. multiple recurrence classes means if it converges it will be dependent on choice of $i$
 
-![example of state transition diagram with 2 recurrence classes](unit10lec25-steady-state-behavior-of-markov-chains\9e75e51dcff6953d8abefe4259866258.png)
+![example of state transition diagram with 2 recurrence classes](unit10lec25-steady-state-behavior-of-markov-chains/9e75e51dcff6953d8abefe4259866258.png)
 
-![example of 1 periodic recurrence class](unit10lec25-steady-state-behavior-of-markov-chains\e65dd65738fb6819c498259de4e5ba23.png)
+![example of 1 periodic recurrence class](unit10lec25-steady-state-behavior-of-markov-chains/e65dd65738fb6819c498259de4e5ba23.png)
 
-![example of 1 aperiodic recurrence class](unit10lec25-steady-state-behavior-of-markov-chains\48fea129f567436a28df101553e00ce5.png)
+![example of 1 aperiodic recurrence class](unit10lec25-steady-state-behavior-of-markov-chains/48fea129f567436a28df101553e00ce5.png)
 
 These are necessary but we have a theorem that these are actually sufficient conditions for saying $r_{ij} \to \pi_j$ if
 1. recurrent states are all in a single class
@@ -107,7 +107,7 @@ p_{m1}\\
 
 ## Example
 
-![example of solving for pi_j for small 2-node markov chain](unit10lec25-steady-state-behavior-of-markov-chains\9101e4dd3fb8dea5a0add65964cef88d.png)
+![example of solving for pi_j for small 2-node markov chain](unit10lec25-steady-state-behavior-of-markov-chains/9101e4dd3fb8dea5a0add65964cef88d.png)
 
 todo: ex 4, wait for install to finish
 
@@ -124,13 +124,13 @@ particle analogy- observers looking at the state of a particle.
 
 We can think of the $\pi_j$ variables directly as being frequency of being in state $j$.
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\dc7de4299cd1b29dcbc8e950039a3368.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/dc7de4299cd1b29dcbc8e950039a3368.png)
 
 given $y_j(n)$ is the number of times $j$ was observed to be the state up to time $n$.
 
 But where does the sum come from? Let's look at the frequency of transitions from a specific states to a given state, e.g. $1\to j: \pi_1 p_{1j}$
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\81d0be0a26c7b749e8bd1f8f171744e6.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/81d0be0a26c7b749e8bd1f8f171744e6.png)
 
 where $z_{1j}(n)$ is the number of times the particle went from state 1 to state $j$.
 
@@ -142,11 +142,11 @@ This is just another intuition for the balance equations, and it also gives us a
 
 # Birth-death processes
 
-![illustration of a full birth-death process state transition diagram](unit10lec25-steady-state-behavior-of-markov-chains\9cd1d710a94b2e6b9c0c259d0e8276d8.png)
+![illustration of a full birth-death process state transition diagram](unit10lec25-steady-state-behavior-of-markov-chains/9cd1d710a94b2e6b9c0c259d0e8276d8.png)
 
 A single link in the chain (at position $i$)
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\62dc55f742560eb95e2e43d63581ab72.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/62dc55f742560eb95e2e43d63581ab72.png)
 
 These chains can be used to model a number of situations, like the checkout counter example we did initially.
 
@@ -158,7 +158,7 @@ One key difference from that example is that the state probabilities here can be
 2. zoom in on two specific states
 3. note that the number of times that you can transition from one side to another must be similar, if you go up $n$ times, you must have gone down $n-1$, $n$, or $n+1$ times (depending on which side you started and whether the side you started on is the side you are coming back to).
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\e1cfb718037e58d27ec2b73669bd443c.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/e1cfb718037e58d27ec2b73669bd443c.png)
 
 because of this we can make the statement
 
@@ -190,15 +190,15 @@ So we solve this for $\pi_0$ then use it to solve for the rest.
 
 We now examine the special case where $p_i = p$ and $q_i = q$.
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\3731dbcaa83fd6a4d01cd97bfb49a398.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/3731dbcaa83fd6a4d01cd97bfb49a398.png)
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\276717ae3f555c99e3c321c3647f0e02.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/276717ae3f555c99e3c321c3647f0e02.png)
 
 Symmetric random walk.
 
 now assume $p < q$ and $m \approx \infty$
 
-![](unit10lec25-steady-state-behavior-of-markov-chains\7564fffccbdffd091a1591b35278c950.png)
+![](unit10lec25-steady-state-behavior-of-markov-chains/7564fffccbdffd091a1591b35278c950.png)
 
 shifted geometric series to start at 0
 

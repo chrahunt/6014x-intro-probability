@@ -118,11 +118,11 @@ Describe **uniform random variables**.
 
 > When the outcome of an experiment is a number, it can be easier to think of the events themselves as the random variables instead of having a dummy random variable in-between.
 
-![plot of uniform random pmf](unit4lec5-probability-mass-functions\8faf6b847b3b6f4ca0a9e2d71a1bb086.png)
+![plot of uniform random pmf](unit4lec5-probability-mass-functions/8faf6b847b3b6f4ca0a9e2d71a1bb086.png)
 
 When $a = b$, it is a constant/deterministic. It takes a single value with probability 1.
 
-![](unit4lec5-probability-mass-functions\7e18762a5b324f7ccf803f305eeec148.png)
+![](unit4lec5-probability-mass-functions/7e18762a5b324f7ccf803f305eeec148.png)
 
 
 ## Binomial random variable
@@ -150,7 +150,7 @@ The number of ways $k$ items could be chosen from $n$ items multiplied by the pr
 
 Binomial PMF examples with fair and unfair coins:
 
-![](unit4lec5-probability-mass-functions\9d2618565021c7b4a27f49ac941c7531.png)
+![](unit4lec5-probability-mass-functions/9d2618565021c7b4a27f49ac941c7531.png)
 
 Any success/failure scenario can be modeled using binomial random variable, if even a subset is required.
 
@@ -172,7 +172,7 @@ Model of: waiting times, number of trials until a success
 
 PMF: $\pmf{X}{k} = (1 - p)^{k - 1}p$ for $k = 1, 2, 3, \ldots$
 
-![](unit4lec5-probability-mass-functions\c02922720510028e591c83ac456fdb0d.png)
+![](unit4lec5-probability-mass-functions/c02922720510028e591c83ac456fdb0d.png)
 
 What is a tricky aspect of this PMF?
 Not well defined for $\pr{\text{no heads}}$.
@@ -225,13 +225,13 @@ Kind of like a population average.
 
 For calculating expected values of the form $\ex{g(X)}$.
 
-![](unit4lec5-probability-mass-functions\456ca9fd91718d84a3d8ae1ba143af2a.png)
+![](unit4lec5-probability-mass-functions/456ca9fd91718d84a3d8ae1ba143af2a.png)
 
 You can  think of it as averaging over $x$ or averaging over $y$.
 
 ## Linearity of expectations
 
-![](unit4lec5-probability-mass-functions\1f8e362345286d28bb6089526e29c994.png)
+![](unit4lec5-probability-mass-functions/1f8e362345286d28bb6089526e29c994.png)
 
 This is the case where $\ex{g(x)} = g(\ex{x})$
 

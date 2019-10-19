@@ -24,7 +24,7 @@ Focus
 
 ## Motivating example for independence
 
-![coin toss slide](unit2lec3-independence\dc9f9a45084779bf0b852750d0d67796.png)
+![coin toss slide](unit2lec3-independence/dc9f9a45084779bf0b852750d0d67796.png)
 
 1. The expression next to each branch gives the conditional probability for that branch.
 
@@ -54,7 +54,7 @@ What is the formal definition of independence? Why do we use it instead of the i
 * it implies the reverse of the intuitive definition: $\cpr{A}{B} = \pr{A}$
 * applies even if $\pr{A} = 0$
 
-![example relationship between independence and intersection](unit2lec3-independence\b7818fccae2e2a94d600b0388d2f3bff.png)
+![example relationship between independence and intersection](unit2lec3-independence/b7818fccae2e2a94d600b0388d2f3bff.png)
 
 Notice that these are not independent even though they are non-intersecting.
 
@@ -76,7 +76,7 @@ Given some $C$, some values are independent under the probability law $\cpr{\cdo
 
 e.g. $\cpr{A \cap B}{C} = \cpr{A}{C} \cpr{B}{C}$
 
-![](unit2lec3-independence\51037da728515b76fad8defa93dfa411.png)
+![](unit2lec3-independence/51037da728515b76fad8defa93dfa411.png)
 
 Independence does not imply conditional independence, as in the above example. Because $A$ and $B$ do not have an intersection in $C$, there is information provided when you know that $C$ occurred because then either $A$ occurred or $B$ occurred but not both.
 
@@ -86,7 +86,7 @@ Yes, the conditional model is just a probability model and the fact that the com
 Given $A$ and $B$ are conditionally independent in $C$, are they conditionally independent given $C^c$?  
 Not necessarily, they may have no intersection in $C^c$.
 
-![](unit2lec3-independence\5c816d4fe0a65e2382eb2298b024903b.png)
+![](unit2lec3-independence/5c816d4fe0a65e2382eb2298b024903b.png)
 
 Conditioning may affect independence, because the condition itself may impart some knowledge.
 
@@ -126,12 +126,12 @@ It allows breaking up of complex probabilities.
 Reliability example:  
 Circuit of units that have a specific failure rate. The question is the probability that the circuit is up, that there is a path from one side to another.
 
-![circuit probability example](unit2lec3-independence\f66e1fdbf2457c828a72bc55e777b881.png)
+![circuit probability example](unit2lec3-independence/f66e1fdbf2457c828a72bc55e777b881.png)
 
 Using de morgan's laws in conjunction with knowing that the complement of a probability $P$ is $1-P$.
 
 ## The king's sibling
 
-![](unit2lec3-independence\dc853f8df0b65f796de19f34a240f1ee.png)
+![](unit2lec3-independence/dc853f8df0b65f796de19f34a240f1ee.png)
 
 This problem is a warning to consider all assumptions. The statement that the king comes from a family of 2 children is important because the reason for having 2 children can impact the probability determined at the end.

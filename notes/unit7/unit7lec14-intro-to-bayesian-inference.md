@@ -55,7 +55,7 @@ $\newcommand{\unfrm}[2]{ \mathcal{U}\left( #1, #2 \right) }$
 
 This is a big picture we've seen before:
 
-![](unit7lec14-intro-to-bayesian-inference\2d09b9c83e0143ee81752d6a07001d61.png)
+![](unit7lec14-intro-to-bayesian-inference/2d09b9c83e0143ee81752d6a07001d61.png)
 
 Recall that inference/statistics works to generate models from **data**. Models are then analyzed using probability theory.
 
@@ -89,7 +89,7 @@ in the latter case the model is given to us but is incomplete.
 Example:
 Some signal goes through a medium, has some noise added to it, and is received as $X$ by a sensor.
 
-![](unit7lec14-intro-to-bayesian-inference\031282c085b97061bccf63e548493e42.png)
+![](unit7lec14-intro-to-bayesian-inference/031282c085b97061bccf63e548493e42.png)
 
 and we're given the relationship $X = aS + W$. The two questions reasonable to ask here are:
 
@@ -117,7 +117,7 @@ The distribution of the unknown. $p_\Th$ or $f_\Th$, our beliefs about the unkno
 
 Then we get some observation $X$ and we generate an observation model $p_{X|\Th}$ or $f_{X|\Th}$
 
-![](unit7lec14-intro-to-bayesian-inference\bfd30e1c8ac6b0181d0c9760832e000c.png)
+![](unit7lec14-intro-to-bayesian-inference/bfd30e1c8ac6b0181d0c9760832e000c.png)
 
 Where do we get the prior distribution?  
 * symmetry argument - we can assume all possibilities are equally likely
@@ -128,13 +128,13 @@ Where do we get the prior distribution?
 What is the output of Bayesian inference?  
 A posterior distribution of the form $\cpmf{\Theta}{X}{\cnd{\cdot}{x}}$ or $\cpdf{\Theta}{X}{\cnd{\cdot}{x}}$.
 
-![](unit7lec14-intro-to-bayesian-inference\a64116d5469a038c61827341fcf2b204.png)
+![](unit7lec14-intro-to-bayesian-inference/a64116d5469a038c61827341fcf2b204.png)
 
 Example: electoral votes.
 
 We could say simply some probability that a particular person will win, but a more complete result would look like
 
-![](unit7lec14-intro-to-bayesian-inference\cdcc0ba6e23184a829e7493557928e84.png)
+![](unit7lec14-intro-to-bayesian-inference/cdcc0ba6e23184a829e7493557928e84.png)
 
 This is useful but there may also be some estimation and summarization done after the posterior is defined:
 * point estimates
@@ -173,13 +173,13 @@ Situation: Incoming data ($X$) is discrete and we want to generate a model over 
 
 Versions of Bayes rule for this case:
 
-![](unit7lec14-intro-to-bayesian-inference\e381a1caf27af4e254b55a25854642d5.png)
+![](unit7lec14-intro-to-bayesian-inference/e381a1caf27af4e254b55a25854642d5.png)
 
  Refer back to bayes rule lectures for info on how to determine distribution, now just assume we have observed $X$ and already have the conditional PMF of $\Theta$.
 
  Suppose $\Theta$ is
 
- ![](unit7lec14-intro-to-bayesian-inference\c2a149807003109ced079ff9e55a147c.png)
+ ![](unit7lec14-intro-to-bayesian-inference/c2a149807003109ced079ff9e55a147c.png)
 
 We want to come up with an **estimate** using our two estimators:
 
@@ -210,7 +210,7 @@ Since each term of the sum is as small as possible it means the sum is as small 
 
 Applicable version of the Bayes rule:
 
-![](unit7lec14-intro-to-bayesian-inference\1563233f6dfaa24d30f8ab74cbbe2435.png)
+![](unit7lec14-intro-to-bayesian-inference/1563233f6dfaa24d30f8ab74cbbe2435.png)
 
 Example:
 
@@ -218,11 +218,11 @@ We send signal $\Theta \in \{1, 2, 3\}$, letting $X = \Theta + W$ and $W \sim N(
 
 We want to get the different parts required for Bayes rule, so start by noticing that given $\Theta$, $X$ is just a constant + $W$. and we have
 
-![](unit7lec14-intro-to-bayesian-inference\a39a2b54aff1a182140680ddf2a8315b.png)
+![](unit7lec14-intro-to-bayesian-inference/a39a2b54aff1a182140680ddf2a8315b.png)
 
 giving us
 
-![](unit7lec14-intro-to-bayesian-inference\9c48b38d6762c17aa1f56642c6b8b4ab.png)
+![](unit7lec14-intro-to-bayesian-inference/9c48b38d6762c17aa1f56642c6b8b4ab.png)
 
 Estimate:
 * MAP rule: $\thh = 2$
@@ -244,7 +244,7 @@ Since the MAP rule makes the probability of each as small as possible, we can co
 
 Related bayes rule
 
-![](unit7lec14-intro-to-bayesian-inference\090b1260bc4df2564e239007bc28d438.png)
+![](unit7lec14-intro-to-bayesian-inference/090b1260bc4df2564e239007bc28d438.png)
 
 Linear normal models - combine r.v.s in a linear function, and all r.v.s are known to be normal. Ex:
 - we have a noisy signal $\Th$. what we receive is given by $X = \Th + W$ and we wish to recover $\Th$.
@@ -306,7 +306,7 @@ Find parts of Bayes rule, assuming $\th \in [0, 1]$
 The last expression is the *beta distribution* with parameters $(k + 1, n - k + 1)$. Don't sweat the +1s, that's just convention.
 
 what if we assumed the beta distribution as a prior?
-![](unit7lec14-intro-to-bayesian-inference\2dd439667bfc89427bedc049bc2614bc.png)
+![](unit7lec14-intro-to-bayesian-inference/2dd439667bfc89427bedc049bc2614bc.png)
 
 we get the beta distribution anyway, nice property.
 
@@ -332,13 +332,13 @@ LMS == conditional expectation of $\Theta$ given specific number of heads.
 
 First we do the MAP estimate, finding the maximum by taking the derivative, setting it equal to 0, and finding $\theta$. Given our estimate, the estimator just uses the random variable.
 
-![](unit7lec14-intro-to-bayesian-inference\156b86bd8a788262148e5892a414a75c.png)
+![](unit7lec14-intro-to-bayesian-inference/156b86bd8a788262148e5892a414a75c.png)
 
 Next LMS. We take the integral over all $\theta$ and use a nice equality from calculus. Remember the coefficient should be equal to that necessary to make the PDF equal 1 over the domain. But recognize that when we take the conditional expectation we're adding another $\theta$ into the mix. using the slick equality we have for both the coefficient and integral itself gives us our equality in the end.
 
-![](unit7lec14-intro-to-bayesian-inference\1b5748b38340616194fca12600f7ed5d.png)
+![](unit7lec14-intro-to-bayesian-inference/1b5748b38340616194fca12600f7ed5d.png)
 
-![](unit7lec14-intro-to-bayesian-inference\9c37658b835013f946170468c144f4cc.png)
+![](unit7lec14-intro-to-bayesian-inference/9c37658b835013f946170468c144f4cc.png)
 
 ## Summary
 
@@ -356,6 +356,6 @@ We covered 2 such estimators:
 
 Then evaluate the performance of the estimator.
 
-![](unit7lec14-intro-to-bayesian-inference\bb254bef3dbc010bc4d5303e7011ba1d.png)
+![](unit7lec14-intro-to-bayesian-inference/bb254bef3dbc010bc4d5303e7011ba1d.png)
 
 the actual calculations just sum or integrate the posterior distribution we found. unconditional cases require total probability or expectation theorem and average over all possible $X$.

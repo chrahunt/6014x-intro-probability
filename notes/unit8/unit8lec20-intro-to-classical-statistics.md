@@ -65,15 +65,15 @@ Classical stats treats $\th$ as a constant and seeks to generate estimates for i
 * you don't want to bias your estimate with a prior on $\Th$
 
 Imagine $\th$ as some constant that impacts the value of
-![](unit8lec20-intro-to-classical-statistics\d8dffce4c7564c267a2d8b93449f7288.png)
+![](unit8lec20-intro-to-classical-statistics/d8dffce4c7564c267a2d8b93449f7288.png)
 
-![](unit8lec20-intro-to-classical-statistics\54ab1f534bb3bb19be42f6d8635dae1d.png)
+![](unit8lec20-intro-to-classical-statistics/54ab1f534bb3bb19be42f6d8635dae1d.png)
 
 the estimator is a fn that takes data and generates an estimate.
 
 you can think of this as having multiple potential models depending on how the $p_X$ is parameterized and by using the data some of those models can be ruled out.
 
-![](unit8lec20-intro-to-classical-statistics\dd4bb493eb34e875da889f76321abec5.png)
+![](unit8lec20-intro-to-classical-statistics/dd4bb493eb34e875da889f76321abec5.png)
 
 Only estimation will be covered in this lecture.
 
@@ -101,11 +101,11 @@ What is the mathematical way to imagine classical statistics?
 
 First we set up our context.
 
-![](unit8lec20-intro-to-classical-statistics\7c6ca2843b12fff9bc14cde1034826ab.png)
+![](unit8lec20-intro-to-classical-statistics/7c6ca2843b12fff9bc14cde1034826ab.png)
 
 Then let
 
-![](unit8lec20-intro-to-classical-statistics\9c1bf610f55d53ccbaa019928fbfb3d6.png)
+![](unit8lec20-intro-to-classical-statistics/9c1bf610f55d53ccbaa019928fbfb3d6.png)
 
 $\Thh_n$ is a r.v. because it depends on the r.v.s $X_i$. We call $\Thh$ an estimator (specifically for the mean value $\th$).
 
@@ -113,13 +113,13 @@ To evaluate this estimator we need to know what makes an estimator "good". The i
 
 **unbiased**: $\ex{\Thh_n}=\th$ for all $\th$. To understand the importance of this imagine a general estimator and what its expected value is
 
-![general estimator depends on theta](unit8lec20-intro-to-classical-statistics\d36ec43a18ec046eeca75787697ba59f.png)
+![general estimator depends on theta](unit8lec20-intro-to-classical-statistics/d36ec43a18ec046eeca75787697ba59f.png)
 
 It could depend on $\th$ in a number of ways, so as to under or over-shoot the mark. unbiased means it does not.
 
 **consistency**: by the WLLN, $\Thh_n \toip \th$ for all $\th$. So as more data comes in the estimator improves.
 
-![mean squared error](unit8lec20-intro-to-classical-statistics\cdde6db1863a8415a5526fd08d95037e.png)
+![mean squared error](unit8lec20-intro-to-classical-statistics/cdde6db1863a8415a5526fd08d95037e.png)
 
 In this case the MSE isn't a fn of $\th$ but that isn't true in general.
 
@@ -131,11 +131,11 @@ Review: biased estimator, consistent estimator
 
 bias - term that expresses whether estimator is systematically above or below the value trying to estimate
 
-![](unit8lec20-intro-to-classical-statistics\958d80efcf1f670d051635cdb8bf5444.png)
+![](unit8lec20-intro-to-classical-statistics/958d80efcf1f670d051635cdb8bf5444.png)
 
 look at two example estimators
 
-![](unit8lec20-intro-to-classical-statistics\16863b5bfdcfbbcf398b836f6f1a5a80.png)
+![](unit8lec20-intro-to-classical-statistics/16863b5bfdcfbbcf398b836f6f1a5a80.png)
 
 Without knowing more about $\th$ it's hard to say which estimator is better. the 0 estimator is better at values close to 0, but the $M_n$ estimator is consistent so with high enough $n$ it will converge to $\th$.
 
@@ -152,7 +152,7 @@ Problem: The value of $\Thh$ isn't enough, more information is needed. Standard 
 
 > What are they and why are they better?
 
-![](unit8lec20-intro-to-classical-statistics\87eb2c9b51664a14595cc4fc82089a24.png)
+![](unit8lec20-intro-to-classical-statistics/87eb2c9b51664a14595cc4fc82089a24.png)
 
 A **confidence interval** (CI) is a statement with two parameters:
 * An interval, $[\Thh^-, \Thh^+]$, in which each endpoint is a fn of the data
@@ -162,16 +162,16 @@ Values for $\alpha$ are often 0.05, 0.025, or 0.01.
 
 The CI is not a statement about the likelihood that $\th$ is between some specific values, but the likelihood that the construction of the specific interval for some set of data captured $\th$.
 
-![](unit8lec20-intro-to-classical-statistics\c32ae1bb4f6fb7461cd23296287ac6ff.png)
+![](unit8lec20-intro-to-classical-statistics/c32ae1bb4f6fb7461cd23296287ac6ff.png)
 
 which doesn't make sense, but on the bounds falling around $\th$
 
-![](unit8lec20-intro-to-classical-statistics\96261b379b9d6c7c64465379237cf51f.png)
+![](unit8lec20-intro-to-classical-statistics/96261b379b9d6c7c64465379237cf51f.png)
 
 Review: what is a confidence interval, what does the confidence interval describe, what is alpha in the CI
 
 ## Confidence intervals for an unknown mean
 
-![finding confidence interval](unit8lec20-intro-to-classical-statistics\eef8b324d0c5ac6abb55520d7aad440a.png)
+![finding confidence interval](unit8lec20-intro-to-classical-statistics/eef8b324d0c5ac6abb55520d7aad440a.png)
 
 One caveat of this technique is the requirement to know $\sigma$ for the parameter being estimated.

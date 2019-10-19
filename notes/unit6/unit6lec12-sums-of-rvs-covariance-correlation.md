@@ -62,7 +62,7 @@ Then since $\pr{X = x, Y = z-x}$ is just the form of the joint PMF on $X, Y$ and
 . Called the "Convolution formula" which takes two PMFs and outputs a new PMF.
 
 A way to quickly carry out convolution check
-![](unit6lec12-sums-of-rvs-covariance-correlation\939b5e39d3720e5502bb0315bd7f22df.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/939b5e39d3720e5502bb0315bd7f22df.png)
 
 Instead of going through all the combinations of numbers that add up to three in the straightforward way (loop and ask yourself for each number), just do the calculation on the graph itself to move $Y$ to the corresponding $X$s. That done, multiply values at the same entries.
 
@@ -99,7 +99,7 @@ the range of the integral can, in general, be pared down based on the behavior o
 
 ## Sum of independent Normal r.v.s
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\ded76e49ec5cb2c1765c98e58f674126.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/ded76e49ec5cb2c1765c98e58f674126.png)
 
 For finitely many normal r.v.s the extension is just to use induction on something like $X + Y + W$.
 
@@ -119,7 +119,7 @@ Whether and how much two random variables move in the same direction.
 
 Starting example:
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\c08bc02782ac196721b6ecb310203b7f.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/c08bc02782ac196721b6ecb310203b7f.png)
 
 If $X$ and $Y$ are independent then the expected value of their product is 0, because they have 0 mean. If not, then taking a discrete uniform distribution over the plots above give us a positive and negative expected value, respectively.
 
@@ -143,7 +143,7 @@ Still 0 covariance since expectation is linear and independence
 
 Does $\cov(X, Y) = 0 \implies x, y$ are independent?  
 No. As a counterexample, consider:
-![zero covariance counterexample](unit6lec12-sums-of-rvs-covariance-correlation\7f321002db489812bbefc9b04feb917b.png)
+![zero covariance counterexample](unit6lec12-sums-of-rvs-covariance-correlation/7f321002db489812bbefc9b04feb917b.png)
 
 which are definitely not independent because known that $y$ or $x$ is 0 makes it so the other one isn't 0.
 
@@ -192,13 +192,13 @@ $\cov$ is symmetric.
 
 deriving for 2, working from the definition of the variance
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\5493387fc4d9bad34dff7aef8a8194a6.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/5493387fc4d9bad34dff7aef8a8194a6.png)
 
 > tip: know explicit mathematical definitions
 
 derivation for $n$ random variables
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\643005688617f8d283bb8d0230fb368e.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/643005688617f8d283bb8d0230fb368e.png)
 
 The nonzero mean case is the same, but the derivation has more terms in the middle that end up getting cancelled.
 
@@ -235,7 +235,7 @@ Ones with 0 std dev.
 What does it mean when $\rho = 0$?
 Two variables are uncorrelated.
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\043038e14408a0b5e69eccff18c23b49.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/043038e14408a0b5e69eccff18c23b49.png)
 
 Some sample situations:
 correlation coefficient of a variable with itself is 1 (because it would be variance over variance)
@@ -246,7 +246,7 @@ if two variables are exactly linearly related then abs($\rho$) = 1
 
 One great property of $\rho$ is that it is invariant under some linear operation, up to sign.
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\b33a202213d7c5367c152e13e3989047.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/b33a202213d7c5367c152e13e3989047.png)
 
 Example is temperature correlation with some other random variable, it doesn't matter what units the temperature is in because they're all convertible to one another via a linear function.
 
@@ -261,10 +261,10 @@ Proof $-1 \le \rho \le 1$:
 
 $\ex{X^2} = 1$ in the first line because we assumed zero mean, so the second term of $\var{X} = \ex{X^2} - (\ex{X})^2$ would be zero and we also assumed unit variance so it is 1.
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\bd8395501d19860759534e325b3cbeeb.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/bd8395501d19860759534e325b3cbeeb.png)
 
 Logic chain for $\abs{\rho} = 1$ implying dependence:
-![](unit6lec12-sums-of-rvs-covariance-correlation\9264d6b89e1d82bb0318acf5c4dbaf35.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/9264d6b89e1d82bb0318acf5c4dbaf35.png)
 
 Because the expected value of the previous equation is equal to $1 - \rho^2$, if $\abs{\rho} = 1$ then the expected value is 0, but then because the value in the expected value is always positive (because it is squared), then that means it must be 0 with probability 1. But that means that either $X = Y$ or $X = -Y$.
 
@@ -292,7 +292,7 @@ Underlying, common, hidden factor affecting both.
 
 Example 12.9, calculating coefficient with sum
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\e8da8c021bb362e2e2c0e8654dc7a5f0.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/e8da8c021bb362e2e2c0e8654dc7a5f0.png)
 
 ## Correlations matter
 
@@ -300,4 +300,4 @@ This example offers several things:
 1. Real-world example of using a probability model (independent random variables) to model combined risk/return on housing markets.
 2. Showing how correlation coefficient can impact real attributes of that model (like variance), and how assumptions about correlation can lead to underestimating potential losses.
 
-![](unit6lec12-sums-of-rvs-covariance-correlation\b9fdaf0af2a7d4cef9af31a68751ccd0.png)
+![](unit6lec12-sums-of-rvs-covariance-correlation/b9fdaf0af2a7d4cef9af31a68751ccd0.png)

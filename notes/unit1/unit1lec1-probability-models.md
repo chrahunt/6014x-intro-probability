@@ -59,7 +59,7 @@ Strengthening of finite additivity axiom:
 Countable additivity axiom:
 If $A_1, A_2, A_3, \ldots$ is an infinite **sequence** of disjoint events, then $\pr{A_1 \cup A_2 \cup A_3 \cup \cdots} = \pr{A_1} + \pr{A_2} + \pr{A_3} + \cdots$
 
-![](unit1lec1-probability-models\1d81db0ae5a72c5fdc2e7e07ec8a156e.png)
+![](unit1lec1-probability-models/1d81db0ae5a72c5fdc2e7e07ec8a156e.png)
 
 Geometric sum
 infinite sum
@@ -76,4 +76,4 @@ A framework for analyzing phenomena with uncertain outcomes
 
 Statistics complements probability.
 
-![relationship between probability theory and statistics](unit1lec1-probability-models\3a398f9f2f46087527ee73fc99827ee3.png)
+![relationship between probability theory and statistics](unit1lec1-probability-models/3a398f9f2f46087527ee73fc99827ee3.png)

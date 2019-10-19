@@ -40,8 +40,8 @@ Properties of PDFs.
 When is a random variable continuous?  
 When it can be described by a PDF.
 
-What happens to the sample space when dealing with PMFs and PDFs?  
-![sample space, where has it gone?](unit5lec8-probability-density-functions\26c4a55b2f616484fcbb68a515f147b6.png)
+What happens to the sample space when dealing with PMFs and PDFs?
+![sample space, where has it gone?](unit5lec8-probability-density-functions/26c4a55b2f616484fcbb68a515f147b6.png)
 
 The PMF and PDFs give the probability of a given random variable taking on a certain value. This can be thought of as some function mapping the sample space of actual events to the values assigned probabilities by the PMF/PDF.
 
@@ -61,7 +61,7 @@ Because the product of the height and the width of the rectangle needs to be 1.
 
 What is the generalization of the continuous uniform PMF?  
 The piecewise constant PDF. It is uniform between specifically defined values.
-![piecewise uniform PDF](unit5lec8-probability-density-functions\4b5754ec3336f8f524bea01231518a1d.png)
+![piecewise uniform PDF](unit5lec8-probability-density-functions/4b5754ec3336f8f524bea01231518a1d.png)
 
 Why are they called probability density functions?  
 They measure density of probability over the random variable.
@@ -126,10 +126,10 @@ f_X(x) =
 \end{cases}
 \]
 
-![](unit5lec8-probability-density-functions\0cece205679387cf48b3317d7ccc6593.png)
+![](unit5lec8-probability-density-functions/0cece205679387cf48b3317d7ccc6593.png)
 
 Similar to the geometric PDF
-![](unit5lec8-probability-density-functions\3637be0bbd2b1ed7e16fb4a85277c211.png)
+![](unit5lec8-probability-density-functions/3637be0bbd2b1ed7e16fb4a85277c211.png)
 
 Let $a > 0$, and recall
 \[
@@ -187,7 +187,7 @@ F_X(x) = \pr{X \le x} = \int_{-\infty}^x\iint{f_X(t)}{t}
 \]
 
 CDF for a continuous uniform distribution:
-![](unit5lec8-probability-density-functions\b9cdd8c81f117a04922e65c5f047fcf0.png)
+![](unit5lec8-probability-density-functions/b9cdd8c81f117a04922e65c5f047fcf0.png)
 
 Treat the CDF in cases based on what the PDF is doing for a value of $x$.
 
@@ -207,7 +207,7 @@ F_X(x) = \pr{X \le x} = \sum_{k \le x} p_X(k)
 \]
 
 example
-![](unit5lec8-probability-density-functions\67c03ebf30507ed0b850c31ac2042386.png)
+![](unit5lec8-probability-density-functions/67c03ebf30507ed0b850c31ac2042386.png)
 
 ## General CDF properties
 
@@ -235,7 +235,7 @@ N(0, 1) := f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}
 
 The constant term comes from the fact that the integral over all $x$s of the function needs to be 1 and $\int_{-\infty}^\infty \iint{e^{-x^2/2}}{x} = \sqrt{2\pi}$.
 
-![](unit5lec8-probability-density-functions\b195def7d19d5952455948c79de223b6.png)
+![](unit5lec8-probability-density-functions/b195def7d19d5952455948c79de223b6.png)
 
 Because it is symmetric around 0, the mean/expected value is $\ex{X} = 0$. Integrating by parts gives use $\var{X} = 1$, which explains the notation.
 
@@ -244,7 +244,7 @@ Generalizing:
 N(\mu, \sigma^2) := \frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/2\sigma^2}
 \]
 
-![](unit5lec8-probability-density-functions\3356c1573bb36c94dc727f3e2d9187df.png)
+![](unit5lec8-probability-density-functions/3356c1573bb36c94dc727f3e2d9187df.png)
 
 What is an important property of normal random variables?  
 They behave well analytically
@@ -266,7 +266,7 @@ continuous random variables have to be described by a PDF.
 
 There's no closed form of the PDF or CDF for the normal distribution, but we have tables that can be used.
 
-![normal table of values](unit5lec8-probability-density-functions\ea87ae04a5847cb77c55499f828eae2d.png)
+![normal table of values](unit5lec8-probability-density-functions/ea87ae04a5847cb77c55499f828eae2d.png)
 
 The CDF of the normal is so popular it gets its own symbol, $\Phi(y)$.
 
@@ -277,7 +277,7 @@ $Y$ measures the number of std deviations away from the mean. and also $\ex{Y} =
 
 If $X$ is normal then $Y \sim N(0, 1)$, and we can rewrite $X=\mu + \sigma Y$. This shows that it's possible to just use the standard normal and then change as needed for specific instances.
 
-![problem example](unit5lec8-probability-density-functions\c1db9b6aa35030bf3ea592c5938434f4.png)
+![problem example](unit5lec8-probability-density-functions/c1db9b6aa35030bf3ea592c5938434f4.png)
 
 Some techniques for using the normal table effectively:
 * use symmetry about the mean, so being larger that some value less than the mean is the same as being smaller than some value larger than the mean.

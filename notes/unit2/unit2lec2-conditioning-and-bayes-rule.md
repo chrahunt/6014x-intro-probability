@@ -78,7 +78,7 @@ Ex: Radar detection.
 * $A$ - airplane flying above
 * $B$ - something registered on radar
 
-![radar probability tree](unit2lec2-conditioning-and-bayes-rule\e8b6d820f52007d53b7a924c5d596ba4.png)
+![radar probability tree](unit2lec2-conditioning-and-bayes-rule/e8b6d820f52007d53b7a924c5d596ba4.png)
 
 The probabilities on the second level of the tree are conditional probabilities, meaning they already take into account the fact that $A$ or $A^c$ occurred.
 
@@ -137,7 +137,7 @@ The general formula is
 
 ## Total probability theorem
 
-![total probability theorem derivation](unit2lec2-conditioning-and-bayes-rule\0b6af1e49dd25ed3d1976c915ecd48c4.png)
+![total probability theorem derivation](unit2lec2-conditioning-and-bayes-rule/0b6af1e49dd25ed3d1976c915ecd48c4.png)
 
 
 ## Bayes Rule

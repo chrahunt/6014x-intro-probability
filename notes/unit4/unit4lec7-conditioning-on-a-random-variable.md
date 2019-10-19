@@ -31,7 +31,7 @@ $\newcommand{\cpmf}[3]{ \pmf{\left.#1\middle|#2\right.}{#3} }$
 Connections:
 * unit 2 lecture 2 - conditioning with probabilities
 
-![](unit4lec7-conditioning-on-a-random-variable\da41e3bae87ae2fe2f0acff804b77502.png)
+![](unit4lec7-conditioning-on-a-random-variable/da41e3bae87ae2fe2f0acff804b77502.png)
 
 At a high level, conditional PMFs are just like conditional probabilities. We look at how probabilities change when we know that some random other random variable takes on a specific value or a set of specific values.
 
@@ -55,7 +55,7 @@ PMFs with more than two r.v.s
 p_{X|Y,Z}(x|y,z) = \cpr{X=x}{Y=y,Z=z}
 \]
 
-![](unit4lec7-conditioning-on-a-random-variable\4530a16db16781f7af5e5c2b4513f952.png)
+![](unit4lec7-conditioning-on-a-random-variable/4530a16db16781f7af5e5c2b4513f952.png)
 
 > If a variable isn't bound then it doesn't necessarily make the statement syntactically incorrect, it just means an expression is a function of the unbound variables.
 
@@ -64,7 +64,7 @@ p_{X|Y,Z}(x|y,z) = \cpr{X=x}{Y=y,Z=z}
 
 In these cases as we move from previous results to full multivariable functions of random variables, we consider the case where an event is actually a random variable being some specific value.
 
-![](unit4lec7-conditioning-on-a-random-variable\64b7545a29dd29ae3cd9e7e392cab3c8.png)
+![](unit4lec7-conditioning-on-a-random-variable/64b7545a29dd29ae3cd9e7e392cab3c8.png)
 
 
 ## Total probability and expectation theorems
@@ -96,7 +96,7 @@ The usefulness of these theorems is that it can be used to divide and conquer co
 
 Tracing independence from our original understanding in terms of events through to an interpretation in terms of random variables.
 
-![](unit4lec7-conditioning-on-a-random-variable\1bbba12a58fcb1214b7a54e9c081ff63.png)
+![](unit4lec7-conditioning-on-a-random-variable/1bbba12a58fcb1214b7a54e9c081ff63.png)
 
 In the real world independence is used to model situations where each of the random variables is generated in a decoupled manner, in a separate probabilistic experiment and these experiments do not interact with each other and have no common sources of uncertainty.
 
@@ -105,14 +105,14 @@ Intuitively, a deterministic r.v. does not provide information about non determi
 
 ## Example: independence and conditional independence
 
-![](unit4lec7-conditioning-on-a-random-variable\5d81b9c4a8ad0f51960cb061c719f26b.png)
+![](unit4lec7-conditioning-on-a-random-variable/5d81b9c4a8ad0f51960cb061c719f26b.png)
 
 We do have independence in the blue universe, checked by looking at whether the joint PMF factors as a product of marginal PMFs.
 
 
 ## Independence and expectations
 
-![](unit4lec7-conditioning-on-a-random-variable\3c8556026315c4e45315dfc049efad02.png)
+![](unit4lec7-conditioning-on-a-random-variable/3c8556026315c4e45315dfc049efad02.png)
 
 ## Independence, variances, and the binomial variance
 

@@ -31,11 +31,11 @@ transient states
 
 works to model situations where the future depends on (and can be predicted by) the past
 
-![diagram of past pointing to future and being connected by state](unit10lec24-finite-state-markov-chains\46beef2516c14e06b41bf0edc8e3d8df.png)
+![diagram of past pointing to future and being connected by state](unit10lec24-finite-state-markov-chains/46beef2516c14e06b41bf0edc8e3d8df.png)
 
 past and future are linked by state which evolves over time
 
-![](unit10lec24-finite-state-markov-chains\5893401418175fe774328a70b2025609.png)
+![](unit10lec24-finite-state-markov-chains/5893401418175fe774328a70b2025609.png)
 
 ## Checkout counter example
 
@@ -44,17 +44,17 @@ Someone leaves or someone arrives
 
 Assume 1 person is served at a time.
 
-![picture of checkout line with customers arriving and departing](unit10lec24-finite-state-markov-chains\9c7341f1c25dea4eb683c447530e1798.png)
+![picture of checkout line with customers arriving and departing](unit10lec24-finite-state-markov-chains/9c7341f1c25dea4eb683c447530e1798.png)
 
 Assume that customer arrivals are distributed according to bernoulli($p$). Then based on the previous unit we know the inter-arrival time will be geometric($p$).
 
-![discrete time line with possible arrivals at time 2 and 6](unit10lec24-finite-state-markov-chains\048b28ed8d52eb561de620e50201b022.png)
+![discrete time line with possible arrivals at time 2 and 6](unit10lec24-finite-state-markov-chains/048b28ed8d52eb561de620e50201b022.png)
 
 assume that the customer service times are distributed according to geometric($q$)
 
 transition probability graph provides a representation of a discrete time finite state Markov chain model of the example.
 
-![discrete time line indicating customers were serviced at times 4 and 6](unit10lec24-finite-state-markov-chains\7fa6aa044e81717f2e58f1e4b62eb353.png)
+![discrete time line indicating customers were serviced at times 4 and 6](unit10lec24-finite-state-markov-chains/7fa6aa044e81717f2e58f1e4b62eb353.png)
 
 The number of people in the queue at each step seems to capture everything we need to know.
 
@@ -62,7 +62,7 @@ restrict the total number of people that can be in the queue to 10. Then there a
 
 Let $X_n$ by the number of customers at time $n$.
 
-![state transition diagram showing probabilities for transitioning between the different states](unit10lec24-finite-state-markov-chains\72f39340b44699818776283eb3a68f65.png)
+![state transition diagram showing probabilities for transitioning between the different states](unit10lec24-finite-state-markov-chains/72f39340b44699818776283eb3a68f65.png)
 
 The sum of the probabilities of the transitions possible from a state is 1.
 
@@ -78,7 +78,7 @@ $X_n$: state after $n$ transitions. Belongs to a finite state.
 
 The initial state $X_0$ could be fixed or random.
 
-![state transition diagram of a general markov chain](unit10lec24-finite-state-markov-chains\4f25caea854bd31d59e49f6920056f10.png)
+![state transition diagram of a general markov chain](unit10lec24-finite-state-markov-chains/4f25caea854bd31d59e49f6920056f10.png)
 
 In general the transitions with 0 probability are not shown.
 
@@ -89,7 +89,7 @@ The sum of the probabilities leading from a state is 1.
 The chain is time homogenous, i.e. $p_{ij}$ holds for all $n$.
 
 This is all true assuming the Markov property holds:
-![markov property definition](unit10lec24-finite-state-markov-chains\1077e8170528082d64e0005ef41612e5.png)
+![markov property definition](unit10lec24-finite-state-markov-chains/1077e8170528082d64e0005ef41612e5.png)
 
 Because of this property it is important when building any model to ensure that the state captures all necessary state information. There are no recipes but practice allows making better choices.
 
@@ -139,13 +139,13 @@ r_{ij}(1) &= p_{ij}, \forall i, \forall j
 
 Then we consider going from $i$ to state $j$. Suppose there is some state $k$ with $p_{kj} \neq 0$. This is the same as constant regardless of how we got to $k$ by the markov property, so we can write the probability of getting to state $j$ via $k$ as $r_{ik}(n-1)p_{kj}$ as seen in the diagram below.
 
-![diagram of transition from i to k to j](unit10lec24-finite-state-markov-chains\4f9801993ac23eeb4f183fd7c22640fa.png)
+![diagram of transition from i to k to j](unit10lec24-finite-state-markov-chains/4f9801993ac23eeb4f183fd7c22640fa.png)
 
 where the squiggly line is just the undetermined path from $i$ to $k$. Again, the last leg of the journey is really a conditional probability on both $X_{n-1} = k$ and $X_0 = i$, but by the markov property that can be simplified to just $p_{kj}$.
 
 Using this reasoning, we can consider all such probabilities to the $m$ states that lead directly to $j$.
 
-![diagram of transition from i to j through m pre-j states](unit10lec24-finite-state-markov-chains\d7151261cc4035e71a23c1736689a33b.png)
+![diagram of transition from i to j through m pre-j states](unit10lec24-finite-state-markov-chains/d7151261cc4035e71a23c1736689a33b.png)
 
 This is an application of the total probability theorem. The probability of getting from $i$ to $j$ in $n$ steps is the probability of getting to some state that connects with $h$ in $n-1$ steps times the probability of those states leading to $j$.
 
@@ -157,7 +157,7 @@ This is recursive in the sense that the inner function $r_{ik}(n-1)$ is calculat
 
 A variation is to start at $i$ and traces outwards
 
-![](unit10lec24-finite-state-markov-chains\64d65ba0ee21b0d50213f9ffccd0a8bd.png)
+![](unit10lec24-finite-state-markov-chains/64d65ba0ee21b0d50213f9ffccd0a8bd.png)
 
 If the initial distribution ($X_0$) is itself random, then the state probability distribution after $n$ steps is given by
 
@@ -167,7 +167,7 @@ If the initial distribution ($X_0$) is itself random, then the state probability
 
 ## A numerical example, part 1
 
-![state transition diagram](unit10lec24-finite-state-markov-chains\98897514467914bbe8609c74ba01cbb8.png)
+![state transition diagram](unit10lec24-finite-state-markov-chains/98897514467914bbe8609c74ba01cbb8.png)
 
 trying to solve for the general case
 
@@ -177,7 +177,7 @@ seeing some convergence to a value after a period of time.
 
 This happens regardless of the state that is chosen initially.
 
-![](unit10lec24-finite-state-markov-chains\bcdd1da4678afca9d756d17491e93088.png)
+![](unit10lec24-finite-state-markov-chains/bcdd1da4678afca9d756d17491e93088.png)
 
 When this happens it is the markov chain entering a 'steady state'. The thing that becomes stable is the probability of $X_n$ as $n$ grows large.
 
@@ -191,13 +191,13 @@ This can be broken into a few questions.
 
 First, is it necessarily true that $r_{ij}(n)$ converge? Notice
 
-![](unit10lec24-finite-state-markov-chains\b439c62d7cda00e894b1f25f7f5f3d8d.png)
+![](unit10lec24-finite-state-markov-chains/b439c62d7cda00e894b1f25f7f5f3d8d.png)
 
 We will see that chains without this periodicity do not have convergence problems.
 
 Another question, assuming the markov chain does converge does the limit depend on the initial state?
 
-![](unit10lec24-finite-state-markov-chains\960c03209f62904c483539e63c467e38.png)
+![](unit10lec24-finite-state-markov-chains/960c03209f62904c483539e63c467e38.png)
 
 ## Recurrent and transient states
 
@@ -208,6 +208,6 @@ Defns:
 A state $i$ is *recurrent* if "starting from  $i$, and from wherever you can go, there is a way of returning to $i$"
 A state that is not recurrent is called *transient*
 
-![example state diagram containing transient and recurrent states](unit10lec24-finite-state-markov-chains\f2822cc6e0a56f045ad1a7ea8262dd9e.png)
+![example state diagram containing transient and recurrent states](unit10lec24-finite-state-markov-chains/f2822cc6e0a56f045ad1a7ea8262dd9e.png)
 
 A "class" is a set of connected recurrent states. The presence of multiple classes in a markov chain state diagram matters when determining whether the initial state will matter for convergence.

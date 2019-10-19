@@ -65,8 +65,8 @@ Recall the conditional expectation (for discrete; in cts case it is just an inte
 \cex{X}{Y = y} = \sum_x x \cpmf{X}{Y}{ \cnd{x}{y} }
 \]
 
-Parameterize $Y$ and let the result be $g(Y)$. What is this?  
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\f89d934d5c2436729276b84d4221a57e.png)
+Parameterize $Y$ and let the result be $g(Y)$. What is this?
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/f89d934d5c2436729276b84d4221a57e.png)
 
 This is the abstract conditional expectation of $X$ given $Y$.
 
@@ -106,14 +106,14 @@ The law of iterated expectations is just an abstracted version of the total expe
 
 ## Stick-breaking revisited
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\166c671da54f742a7dc0c77bb9222626.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/166c671da54f742a7dc0c77bb9222626.png)
 
 In the first case $\cex{X}{Y = y} = \frac{y}{2}$ this is an equality between numbers whereas $\cex{X}{Y} = \frac{Y}{2}$ is an equality between random variables.
 
 
 ## Forecast revisions
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\111d091d103d08a110f12417c0caabf2.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/111d091d103d08a110f12417c0caabf2.png)
 
 
 ## The conditional variance as a random variable
@@ -127,7 +127,7 @@ Looking first at a case where $Y = y$:
 
 In the latter case everything is the same the conditional universe just goes down into the inner expectation.
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\e596ab8ed3da6346b68cc864bd3414ad.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/e596ab8ed3da6346b68cc864bd3414ad.png)
 
 expected value being a random variable means it has its own variance.
 
@@ -160,7 +160,7 @@ Drill for using law of iterated expectations to find some $X$.
 
 Given an $X$ described by this graph:
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\fd5007462643e0a820a19ed14966c561.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/fd5007462643e0a820a19ed14966c561.png)
 
 we want to divide and conquer. Let $Y = 1$ be the case where $X$ falls in the left square and $Y = 2$ be the case where it falls in the right rectangle, then
 
@@ -208,18 +208,18 @@ Intuition-building. Showing how we may go through a calculation
 
 Information and data given
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\7a4d6efd0a2354ae1389775f46c583af.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/7a4d6efd0a2354ae1389775f46c583af.png)
 
 If we just do an average over the whole class we get
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\a984fc3003207555314076311e03b252.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/a984fc3003207555314076311e03b252.png)
 
 Now dividing and conquering
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\6fb0eafd62db7ac2df584e2690bbefd7.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/6fb0eafd62db7ac2df584e2690bbefd7.png)
 
 It is essentially a calculation of the average across the entire class.
 
 now for total variance
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\32154c83b34bbec6e0c595b53eb5e8f0.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/32154c83b34bbec6e0c595b53eb5e8f0.png)
 
 The explanation at the bottom has it. The variance in the class is broken into two sources, within the sections themselves and between the two sections.
 
@@ -228,7 +228,7 @@ The explanation at the bottom has it. The variance in the class is broken into t
 
 > When faced with a complicated problem, try to condition on some information that will make the problem easier.
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\2b6212964903f565c536ac38ce01c96c.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/2b6212964903f565c536ac38ce01c96c.png)
 
 which makes intuitive sense, but it is always good to have a formal derivation.
 
@@ -239,6 +239,6 @@ Assuming the $X_i$ are identically distributed makes things much simpler.
 
 ## Variance of the (sum of (a random number of r.v.s))
 
-![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs\ca45bef07209c2a24077aeae1c3c52a5.png)
+![](unit6lec13-cond-expectation-sum-of-random-num-of-i-r-vs/ca45bef07209c2a24077aeae1c3c52a5.png)
 
 Demonstrates the power of the law of total variance because this would be hard to come up with intuitively.

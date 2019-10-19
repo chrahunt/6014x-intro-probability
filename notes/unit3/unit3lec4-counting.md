@@ -65,7 +65,7 @@ It's also useful to think about executing choices in a different order and seein
 
 Binomial probabilities are related to binomial probabilities, an example being a **coin-tossing model**. This is one where you ask a question like what the probability of getting $k$ heads is in $n$ coin tosses where $\pr{H} = p$.
 
-![](unit3lec4-counting\0d6608979c70ad7b8c8fa2cb0b673464.png)
+![](unit3lec4-counting/0d6608979c70ad7b8c8fa2cb0b673464.png)
 
 Make sure to pay attention to what a problem is asking, and don't just jump into trying to manipulate some expression without seeing how to move around the ideas first.
 
@@ -92,7 +92,7 @@ Similar to the previous computation, we assume we know the value we want, $c$ th
 
 Imagine that we do this distribution and then ask each person to order their items and place it into a list consecutively. Then all possible combinations are generated. But we know that the number of ways of ordering n items is $n!$ so we have the equation: $cn_1!n_2!\cdots n_r! = n!$. Thinking about multiplication as the way to calculate the number of cases given $x_i$ decisions at each point helps to realize this equality.
 
-![](unit3lec4-counting\0d8b016822191a245d45f8051e8de8ef.png)
+![](unit3lec4-counting/0d8b016822191a245d45f8051e8de8ef.png)
 
 Number of partitions $c$:
 
@@ -109,4 +109,4 @@ A discrete uniform probability model can be used.
 
 ### Distributing cards example
 
-![](unit3lec4-counting\47da42e2c94cbbf85ae7f496b58ba64c.png)
+![](unit3lec4-counting/47da42e2c94cbbf85ae7f496b58ba64c.png)

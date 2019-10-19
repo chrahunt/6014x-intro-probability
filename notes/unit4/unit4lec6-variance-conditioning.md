@@ -96,10 +96,10 @@ Variance of some conditional probability can be larger or smaller than the uncon
 Why are conditional probabilities important?
 They allow us to divide and conquer, splitting complicated probability models into simpler sub-models that we can analyze one at a time.
 
-![Total Expectation Theorem](unit4lec6-variance-conditioning\f7a7ece17cdfce249db2a714c287066b.png)
+![Total Expectation Theorem](unit4lec6-variance-conditioning/f7a7ece17cdfce249db2a714c287066b.png)
 
 How to use total expectation theorem to divide and conquer problems?
-![total expectation theorem example](unit4lec6-variance-conditioning\f1abeea3e9518dce56828991edcd5176.png)
+![total expectation theorem example](unit4lec6-variance-conditioning/f1abeea3e9518dce56828991edcd5176.png)
 
 To apply total expectation theorem to calculate the expected value of this, divide into two cases, $A_1$ and $A_2$. Then, notice the following:
 \[
@@ -173,7 +173,7 @@ $p_{X, Y}(x, y) = \pr{X = x \text{ and } Y =y}$
 What is a marginal PMF?  
 The original PMF of two random variables.
 
-![Joint PMF example](unit4lec6-variance-conditioning\d2e27edeaa6ac1126633feb8b43773a5.png)
+![Joint PMF example](unit4lec6-variance-conditioning/d2e27edeaa6ac1126633feb8b43773a5.png)
 
 Once we have the joint PMF we can calculate anything about the marginal PMFs by summing across the original variable.
 
@@ -197,7 +197,7 @@ The expected value rule for two probabilities:
 
 Derivation of $\ex{X + Y} = \ex{X} + \ex{Y}$
 
-![](unit4lec6-variance-conditioning\18a0fe92bf2aa31ebfa919be369c73df.png)
+![](unit4lec6-variance-conditioning/18a0fe92bf2aa31ebfa919be369c73df.png)
 
 This works for any finite number of random variables
 \[
@@ -210,6 +210,6 @@ Let $X$ be a binomial r.v. with parameters $n$ and $p$, the number of successes 
 
 I'm missing something here, I think he just went back to the original definition of binomial and broke it up into the individual n trials.
 
-![](unit4lec6-variance-conditioning\953017dfcdbe2ddccd4e633ae1ba6b02.png)
+![](unit4lec6-variance-conditioning/953017dfcdbe2ddccd4e633ae1ba6b02.png)
 
 This was much simpler than just approaching the sum directly but I need to think through the binomial r.v. to understand it fully.

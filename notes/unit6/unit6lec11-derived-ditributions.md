@@ -50,7 +50,7 @@ It can be easier to use the expected value rule.
 
 Looking at a simple example $Y = g(X)$:
 
-![](unit6lec11-derived-ditributions\b5333b5b3cc92903955995e1085f070b.png)
+![](unit6lec11-derived-ditributions/b5333b5b3cc92903955995e1085f070b.png)
 
 So when $X$ takes on the value $x$, $Y$ takes the value $g(x)$.
 To find out the probability of each $y$, we want to sum the probabilities of each $x$ that leads to it.
@@ -83,7 +83,7 @@ To show how this is derived, take $Y = 2X + 3$ and notice
 What is the main difference between **linear functions** of discrete and continuous r.v.s?  
 Continuous r.v.s have to worry about total area, which changes over intervals when they are stretched. So a scaling factor is needed.
 
-![examples of scaling a continuous distribution](unit6lec11-derived-ditributions\53d0a29231b121991e20572979d17f23.png)
+![examples of scaling a continuous distribution](unit6lec11-derived-ditributions/53d0a29231b121991e20572979d17f23.png)
 
 Even though the actual value of the PDF changes, the relative values of the corresponding parts of the distribution do not change.
 
@@ -100,7 +100,7 @@ Get the CDF on $Y$ in terms of the CDF of $X$ and differentiate both sides.
 
 Just use the formula from the previous section and collect like terms:
 
-![normal linear equation](unit6lec11-derived-ditributions\f1f0459cf51d48bfd21a9659d4e8be0f.png)
+![normal linear equation](unit6lec11-derived-ditributions/f1f0459cf51d48bfd21a9659d4e8be0f.png)
 
 Then the result is
 \[
@@ -121,20 +121,20 @@ Let $X$ be uniform on $[0, 2]$ and $Y = X^3$, then $\pdf{Y}{y} = \frac{1}{6}\cdo
 
 If you look at a graph of $\pdf{Y}{y}$:
 
-![PDF of Y](unit6lec11-derived-ditributions\116c1b8ea45356314f61f5cdcfddb4a2.png)
+![PDF of Y](unit6lec11-derived-ditributions/116c1b8ea45356314f61f5cdcfddb4a2.png)
 
 then it's easy to see that little $y$s are more likely than big $y$s. $X$ may have been uniform, but as $x$ increases in value consecutive equally likely small intervals of $X$ map to larger areas of $Y$ and so the probability of values in these areas are lower.
 
-![PDF of a general function example 2](unit6lec11-derived-ditributions\fa59434a551c6b21e5cde1f11a436564.png)
+![PDF of a general function example 2](unit6lec11-derived-ditributions/fa59434a551c6b21e5cde1f11a436564.png)
 
 
 ## The monotonic case
 
 Given $Y = g(X)$, if $g(X)$ is monotonic and everywhere differentiable, then it is injective (one-to-one) and there exists an inverse $h(Y)$.
 
-![](unit6lec11-derived-ditributions\cda7ae412f2bdc0c95db6c2b027147ee.png)
+![](unit6lec11-derived-ditributions/cda7ae412f2bdc0c95db6c2b027147ee.png)
 
-![](unit6lec11-derived-ditributions\74daf83375f40fe39373d457fd56fda3.png)
+![](unit6lec11-derived-ditributions/74daf83375f40fe39373d457fd56fda3.png)
 
 Recognize that because the blue decreasing case has negative slope then it will be negative and negated by the negative, but this is just the absolute value.
 
@@ -148,7 +148,7 @@ For monotonic functions, using the formula breaks down the 2 step process given 
 
 ## Intuition for the monotonic case
 
-![](unit6lec11-derived-ditributions\bc8a44ef0437e2a06b580edd5472ba7e.png)
+![](unit6lec11-derived-ditributions/bc8a44ef0437e2a06b580edd5472ba7e.png)
 
 
 ## Nonmonotonic example
@@ -157,25 +157,25 @@ We start with the example $Y = X^2$ over the whole domain. This is nonmonotonic,
 
 Discrete-valued warm-up
 
-![](unit6lec11-derived-ditributions\596e8c76f0e5b41378d1a66a088d374e.png)
+![](unit6lec11-derived-ditributions/596e8c76f0e5b41378d1a66a088d374e.png)
 
 Graph of $x$ and $y$
 
-![](unit6lec11-derived-ditributions\5e4eef611ae80c588fd04debc2a941de.png)
+![](unit6lec11-derived-ditributions/5e4eef611ae80c588fd04debc2a941de.png)
 
 Solving for continuous case from first principles:
 
-![](unit6lec11-derived-ditributions\b519a2cc21a18e2dc2c87af99576d657.png)
+![](unit6lec11-derived-ditributions/b519a2cc21a18e2dc2c87af99576d657.png)
 
 
 ## A function of multiple r.v.s
 
-![](unit6lec11-derived-ditributions\1b8bfae0011ca63c1ebe5bf67e69acab.png)
+![](unit6lec11-derived-ditributions/1b8bfae0011ca63c1ebe5bf67e69acab.png)
 
 Essentially use arguments from geometry and go through the same steps.
 
 Interesting problem on the last one:
 
-![](unit6lec11-derived-ditributions\e08796ee8e4679535b9e438812c7a800.png)
+![](unit6lec11-derived-ditributions/e08796ee8e4679535b9e438812c7a800.png)
 
 It's cute that the area of the unit circle is $\pi$.
