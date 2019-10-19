@@ -46,7 +46,7 @@ What is the definition of a conditional PDF?
 
 \[
 \cpdf{X}{X\in A}{x} = \begin{cases}
-0,                         & \if x \not\in A\\
+0,                             & \if x \not\in A\\
 \frac{ \pdf{X}{x} }{ \pr{A} }, & \if x \in A
 \end{cases}
 \]

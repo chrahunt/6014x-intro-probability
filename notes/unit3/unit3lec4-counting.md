@@ -16,7 +16,7 @@ Develop methods for counting number of elements of a set described in some impli
 
 Tools:
 
-* Basic counding principle
+* Basic counting principle
 * permutations
 * subsets
 * combinations
