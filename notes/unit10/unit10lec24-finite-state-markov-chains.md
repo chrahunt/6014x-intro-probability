@@ -5,11 +5,9 @@ type: lecture
 title: Finite-state Markov chains
 ---
 
-# Finite-state Markov chains
+@import "../lib/macros.md"
 
-$\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
+# Finite-state Markov chains
 
 ## Overview
 

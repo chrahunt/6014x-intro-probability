@@ -5,16 +5,9 @@ type: lecture
 title: Conditioning on a random variable, independence of random variables
 ---
 
-# Lecture 7: Conditioning on a random variable, independence of random variables
+@import "../lib/macros.md"
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
-$\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
-$\newcommand{\cex}[2]{\mathbf{E}\left[#1\,\middle|\,#2\right]}$
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\var}[1]{\text{var}\left(#1\right)}$
-$\newcommand{\pmf}[2]{p_{#1}\left(#2\right)}$
-$\newcommand{\cpmf}[3]{ \pmf{\left.#1\middle|#2\right.}{#3} }$
+# Lecture 7: Conditioning on a random variable, independence of random variables
 
 ## Overview
 

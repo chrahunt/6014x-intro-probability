@@ -5,24 +5,9 @@ type: lecture
 title: Conditioning on a Random Variable, Independence, Bayes' Rule
 ---
 
-# Lecture 10: Conditioning on a Random Variable, Independence, Bayes' Rule
+@import "../lib/macros.md"
 
-$\newcommand{\cnd}[2]{\left.#1\,\middle|\,#2\right.}$
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\pr{ \cnd{#1}{#2} } }$
-$\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\cex}[2]{ \ex{ \cnd{#1}{#2} } }$
-$\newcommand{\var}[1]{\text{var}\left(#1\right)}$
-$\newcommand{\d}{ \text{d} }$
-$\newcommand{\iint}[2]{ \! #1 \,\d #2 }$
-$\newcommand{\pmf}[2]{ p_{ #1 }\left( #2 \right) }$
-$\newcommand{\cpmf}[3]{ \pmf{ \cnd{#1}{#2} }{#3} }$
-$\newcommand{\pdf}[2]{ f_{ #1 }\left( #2 \right)}$
-$\newcommand{\cpdf}[3]{ \pdf{ \cnd{ #1 }{ #2 } }{ #3 } }$
-$\newcommand{\if}{\text{if }}$
-$\newcommand{\exp}{\text{exp}}$
-$\DeclareMathOperator{\exp}{exp}$
+# Lecture 10: Conditioning on a Random Variable, Independence, Bayes' Rule
 
 ## Overview
 

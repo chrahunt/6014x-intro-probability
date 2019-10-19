@@ -5,11 +5,11 @@ type: lecture
 title: Probability Models and Axioms
 ---
 
-# Probability Models and Axioms
-<!-- not deleted on drive -->
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
+@import "../lib/macros.md"
 
-Terms:  
+# Probability Models and Axioms
+
+Terms:
 1. Probabilistic Model
 2. Sample space
 

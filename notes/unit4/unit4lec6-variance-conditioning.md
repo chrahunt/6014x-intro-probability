@@ -5,14 +5,9 @@ type: lecture
 title: Variance; Conditioning on an event; Multiple r.v.s
 ---
 
-# Lecture 6: Variance; Conditioning on an event; Multiple r.v.s
+@import "../lib/macros.md"
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
-$\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
-$\newcommand{\cex}[2]{\mathbf{E}\left[#1\,\middle|\,#2\right]}$
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\var}[1]{\text{var}\left(#1\right)}$
+# Lecture 6: Variance; Conditioning on an event; Multiple r.v.s
 
 ## Overview
 

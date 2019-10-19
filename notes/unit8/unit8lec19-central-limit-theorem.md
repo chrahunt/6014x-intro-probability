@@ -5,11 +5,9 @@ type: lecture
 title: The Central Limit Theorem
 ---
 
-# The Central Limit Theorem
+@import "../lib/macros.md"
 
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\norml}[1]{\mathcal{N}\!\left(#1\right)}$
+# The Central Limit Theorem
 
 ## Overview
 

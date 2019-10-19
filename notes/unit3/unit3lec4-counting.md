@@ -5,10 +5,9 @@ type: lecture
 title: Counting
 ---
 
-# Lecture 4: Counting
+@import "../lib/macros.md"
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
+# Lecture 4: Counting
 
 ## Overview
 

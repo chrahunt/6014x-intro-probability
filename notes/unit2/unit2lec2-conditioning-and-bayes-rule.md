@@ -5,10 +5,9 @@ type: lecture
 title: Conditioning and Bayes Rule
 ---
 
-# Lecture 2: Conditioning and Baye's rule
+@import "../lib/macros.md"
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
+# Lecture 2: Conditioning and Baye's rule
 
 ## Motivation and Overview
 

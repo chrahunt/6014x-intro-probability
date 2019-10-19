@@ -5,22 +5,9 @@ type: lecture
 title: Conditioning on an event; Multiple r.v.s
 ---
 
+@import "../lib/macros.md"
+
 # Lecture 9: Conditioning on an event; Multiple r.v.'s
-
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
-$\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
-$\newcommand{\cex}[2]{\mathbf{E}\left[#1\,\middle|\,#2\right]}$
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\var}[1]{\text{var}\left(#1\right)}$
-$\newcommand{\d}{\text{d}}$
-$\newcommand{\iint}[2]{\!#1\,\d#2}$
-$\newcommand{\pmf}[2]{p_{#1}\left(#2\right)}$
-$\newcommand{\cpmf}[3]{ \pmf{\left.#1\middle|#2\right.}{#3} }$
-$\newcommand{\pdf}[2]{f_{#1}\left(#2\right)}$
-$\newcommand{\cpdf}[3]{ \pdf{\left.#1\middle|#2\right.}{#3} }$
-$\newcommand{\if}{\text{if }}$
-
 
 ## Overview
 

@@ -5,10 +5,9 @@ type: lecture
 title: Independence
 ---
 
-# Lecture 3: Independence
+@import "../lib/macros.md"
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
+# Lecture 3: Independence
 
 ## Overview
 

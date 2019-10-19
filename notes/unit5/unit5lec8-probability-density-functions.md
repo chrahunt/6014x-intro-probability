@@ -5,16 +5,9 @@ type: lecture
 title: Probability Density Functions
 ---
 
-# Lecture 8: Probability Density Functions
+@import "../lib/macros.md"
 
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\cpr}[2]{\mathbf{P}\!\left(#1\,\middle|\,#2\right)}$
-$\newcommand{\setst}[2]{\left\{#1\,\middle|\,#2\right\}}$
-$\newcommand{\cex}[2]{\mathbf{E}\left[#1\,\middle|\,#2\right]}$
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\var}[1]{\text{var}\left(#1\right)}$
-$\newcommand{\d}{\text{d}}$
-$\newcommand{\iint}[2]{\!#1\,\d#2}$
+# Lecture 8: Probability Density Functions
 
 ## Unit Overview
 

@@ -5,12 +5,9 @@ type: lecture
 title: "Inequalities, convergence, and the Weak Law of Large Numbers"
 ---
 
-# Inequalities, convergence, and the Weak Law of Large Numbers
+@import "../lib/macros.md"
 
-$\newcommand{\ex}[1]{\mathbf{E}\left[#1\right]}$
-$\newcommand{\pr}[1]{\mathbf{P}\!\left(#1\right)}$
-$\newcommand{\abs}[1]{ \left|#1\right| }$
-$\newcommand{\unfrm}[2]{ \mathcal{U}\left( #1, #2 \right) }$
+# Inequalities, convergence, and the Weak Law of Large Numbers
 
 ## Overview
 
