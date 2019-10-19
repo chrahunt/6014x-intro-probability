@@ -52,19 +52,19 @@ There's more than one way to come up with a good estimator, no method beats all 
 
 ### Review
 
-What are the three types of problems in Classical statistics?  
+What are the three types of problems in Classical statistics?
 [answer](/ "Hypothesis testing, Composite hypotheses, and estimation.")
 
-Contrast $\Th$ and $\th$ in bayesian and classical statistics.  
+Contrast $\Th$ and $\th$ in bayesian and classical statistics.
 [answer](/ "big Theta in the bayesian framework is a r.v., but little theta is a constant in classical statistics")
 
-What kind of situations is classical statistics useful for?  
+What kind of situations is classical statistics useful for?
 [answer](/ "Estimating a physical constant, doing estimation without a potentially biased prior")
 
-What is the estimator $\Thh$ in classical statistics?  
+What is the estimator $\Thh$ in classical statistics?
 [answer](/ "A r.v. that takes data and generates an estimate for the constant theta")
 
-What is the mathematical way to imagine classical statistics?  
+What is the mathematical way to imagine classical statistics?
 [answer](/ "Multiple potential distributions parameterized by the constant theta and you choose the one with the best fit to the data")
 
 

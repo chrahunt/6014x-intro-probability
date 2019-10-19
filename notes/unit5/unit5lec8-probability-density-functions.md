@@ -30,7 +30,7 @@ Properties of PDFs.
 * nonnegativity
 * integral from $-\infty$ to $\infty$ is 1.
 
-When is a random variable continuous?  
+When is a random variable continuous?
 When it can be described by a PDF.
 
 What happens to the sample space when dealing with PMFs and PDFs?
@@ -38,7 +38,7 @@ What happens to the sample space when dealing with PMFs and PDFs?
 
 The PMF and PDFs give the probability of a given random variable taking on a certain value. This can be thought of as some function mapping the sample space of actual events to the values assigned probabilities by the PMF/PDF.
 
-What is the probability of a continuous random variable taking on a single value? Why?  
+What is the probability of a continuous random variable taking on a single value? Why?
 0, Argue from the integral or by looking at a small section of the function.
 
 Closed and open intervals do not matter because the endpoints are just single points and therefore have probability 0.
@@ -47,16 +47,16 @@ Closed and open intervals do not matter because the endpoints are just single po
 
 Similar to discrete uniform random variable, probability is the same across all possibilities in an interval.
 
-What is the height of a continuous uniform PDF defined between $a$ and $b$?  
+What is the height of a continuous uniform PDF defined between $a$ and $b$?
 $\frac{1}{b-a}$
 
 Because the product of the height and the width of the rectangle needs to be 1.
 
-What is the generalization of the continuous uniform PMF?  
+What is the generalization of the continuous uniform PMF?
 The piecewise constant PDF. It is uniform between specifically defined values.
 ![piecewise uniform PDF](unit5lec8-probability-density-functions/4b5754ec3336f8f524bea01231518a1d.png)
 
-Why are they called probability density functions?  
+Why are they called probability density functions?
 They measure density of probability over the random variable.
 
 ## Expectation and mean of a continuous random variable
@@ -108,7 +108,7 @@ $\sigma = \frac{b-1}{\sqrt{12}}$
 
 ## Exponential random variables
 
-What are the parameters of the exponential random variable?  
+What are the parameters of the exponential random variable?
 $\lambda > 0$
 
 \[
@@ -239,17 +239,17 @@ N(\mu, \sigma^2) := \frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/2\sigma^2}
 
 ![](unit5lec8-probability-density-functions/3356c1573bb36c94dc727f3e2d9187df.png)
 
-What is an important property of normal random variables?  
+What is an important property of normal random variables?
 They behave well analytically
 
 Let $Y = aX + b$ and $X \sim N(\mu, \sigma^2)$. Then $\ex{Y} = a\mu + b$ and $\var{Y} = a^2 \sigma^2$.
 
 Another fact (proved later) is that a linear function of a normal distribution is itself normally distributed: $Y \sim N(a\mu + b, a^2\sigma^2)$
 
-What happens when $a = 0$?  
+What happens when $a = 0$?
 $Y = b$ is a degenerate discrete random variable, a constant. We can think of it like a special case of the normal with $N(b, 0)$, so we can say in every case that a linear function of a normal random variable is normal.
 
-When is $X \sim N(\mu, \sigma^2)$ a continuous random variable?  
+When is $X \sim N(\mu, \sigma^2)$ a continuous random variable?
 When $\sigma \neq 0$, because otherwise it is a single point with nonzero probability.
 
 Continuous random variables have to have zero probability at specific points.
@@ -263,7 +263,7 @@ There's no closed form of the PDF or CDF for the normal distribution, but we hav
 
 The CDF of the normal is so popular it gets its own symbol, $\Phi(y)$.
 
-Let $X$ have mean $\mu$ and variance $\sigma^2 > 0$. What do we do if we have a normally distributed r.v. but it has a different mean and std dev?  
+Let $X$ have mean $\mu$ and variance $\sigma^2 > 0$. What do we do if we have a normally distributed r.v. but it has a different mean and std dev?
 renormalize with $Y = \frac{X - \mu}{\sigma}$.
 
 $Y$ measures the number of std deviations away from the mean. and also $\ex{Y} = 0$ and $\var{Y} = \frac{1}{\sigma^2}\var{X} = 1$.

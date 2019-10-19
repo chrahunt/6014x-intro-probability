@@ -91,7 +91,7 @@ As discussed previously, a normal r.v. gives us $\thh_\map = \thh_\lms = \cex{\T
 
 Setting that equal to 0 gives us $\th = \frac{x}{2}$. For the estimator we get $\Thh_\map = \cex{\Th}{X} = \frac{X}{2}$.
 
-How special is this example?  
+How special is this example?
 It's not. It also works for general means and variances.
 working it out on your own helps determine that the posterior is normal, so the LMS and MAP coincide and the estimators are linear, of the form $\Thh = aX + b$.
 

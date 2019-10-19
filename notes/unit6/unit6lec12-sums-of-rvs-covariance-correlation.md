@@ -50,7 +50,7 @@ Instead of going through all the combinations of numbers that add up to three in
 
 Let $Z = X + Y$ with $X, Y$ cts, independent, and with known PDFs.
 
-What is the PDF of $Z$?  
+What is the PDF of $Z$?
 \[
 \pdf{Z}{z} = \int_\ninfty^\infty \iint{ \pdf{X}{x} \pdf{Y}{z-x} }{x}
 \]
@@ -82,7 +82,7 @@ the range of the integral can, in general, be pared down based on the behavior o
 
 For finitely many normal r.v.s the extension is just to use induction on something like $X + Y + W$.
 
-Why is it important that sums of normal r.v.s are themselves normal?  
+Why is it important that sums of normal r.v.s are themselves normal?
 Because it implies that when we start with normal r.v.s we're generally going to stay in that realm. Linear functions, linear combinations all will be normal still.
 
 
@@ -90,10 +90,10 @@ Because it implies that when we start with normal r.v.s we're generally going to
 
 what are its properties, what is it an attribute of
 
-What is covariance defined on?  
+What is covariance defined on?
 Random variables
 
-What does covariance measure?  
+What does covariance measure?
 Whether and how much two random variables move in the same direction.
 
 Starting example:
@@ -110,17 +110,17 @@ Generalize to encompass situations with nonzero mean, and continuous r.v.s
 \cov(X, Y) = \ex{ (X - \ex{X})\cdot(Y - \ex{Y})}
 \]
 
-What does the expected value look like with variables that have 0 mean?  
+What does the expected value look like with variables that have 0 mean?
 $\ex{XY}$
 
 
-What is the expected value?  
+What is the expected value?
 Weighted average of values by the probability of having those values. For the discrete case it is weighted sum across all examples and for the cts case it is an integral product of the x and pdf.
 
-What happens to independent variables with nonzero mean here?  
+What happens to independent variables with nonzero mean here?
 Still 0 covariance since expectation is linear and independence
 
-Does $\cov(X, Y) = 0 \implies x, y$ are independent?  
+Does $\cov(X, Y) = 0 \implies x, y$ are independent?
 No. As a counterexample, consider:
 ![zero covariance counterexample](unit6lec12-sums-of-rvs-covariance-correlation/7f321002db489812bbefc9b04feb917b.png)
 
@@ -185,7 +185,7 @@ The variance of the sum is the sum of the individual variances and their covaria
 
 ## Correlation coefficient
 
-What is the definition of the correlation coefficient?  
+What is the definition of the correlation coefficient?
 \[
 \begin{align}
 \rho(X, Y) &= \ex{ \frac{(X - \ex{X})}{\sigma_X} \cdot \frac{(Y - \ex{Y})}{\sigma_Y} }\\
@@ -194,15 +194,15 @@ What is the definition of the correlation coefficient?
 \]
 
 
-How does the correlation coefficient relate to the covariance?  
+How does the correlation coefficient relate to the covariance?
 It is a dimensionless version of the covariance
 
 
-Why do we need the correlation coefficient?  
+Why do we need the correlation coefficient?
 Because the covariance is hard to interpret qualitatively, and has weird dimensions (m^2, for example)
 
 
-What is the range of the correlation coefficient?  
+What is the range of the correlation coefficient?
 -1, 1
 
 
@@ -251,22 +251,22 @@ The algebra is similar for the general case, but this only shows zero mean and u
 
 This $\rho$ example shows an extreme form of dependence.
 
-What does $\abs{\rho} = 1$ between two r.v.s imply?  
+What does $\abs{\rho} = 1$ between two r.v.s imply?
 They are linearly dependent.
 
 
 ## Interpreting the correlation coefficient
 
-If $X, Y$ have a high $\rho$, does that imply that one caused another?  
+If $X, Y$ have a high $\rho$, does that imply that one caused another?
 No.
 
-What does the correlation coefficient measure?  
+What does the correlation coefficient measure?
 The degree of association between two r.v.s.
 
-Why might two random variables be related? Give an example.  
+Why might two random variables be related? Give an example.
 Some other variable. Take the example of math and musical ability. They may coexist in a large number of cases but that doesn't mean one causes the other. Maybe they both exercise a similar part of the brain and that development helps in both areas.
 
-What does correlation between random variables often imply?  
+What does correlation between random variables often imply?
 Underlying, common, hidden factor affecting both.
 
 Example 12.9, calculating coefficient with sum

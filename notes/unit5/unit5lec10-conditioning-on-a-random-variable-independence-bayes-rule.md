@@ -21,7 +21,7 @@ title: Conditioning on a Random Variable, Independence, Bayes' Rule
 
 ## Conditional PDFs
 
-What is the problem with going directly from the definition of conditioning on PMFs to conditioning on PDFs?  
+What is the problem with going directly from the definition of conditioning on PMFs to conditioning on PDFs?
 The specific values used in the discrete case have 0 probability in the continuous case.
 
 ![definition of conditional pdf](unit5lec10-conditioning-on-a-random-variable-independence-bayes-rule/976dcb959d4fcbff73601cc5011fe3b2.png)
@@ -90,7 +90,7 @@ Given independent jointly continuous random variables like $X, Y, Z$, having fun
 Uses everything we've got in our hands.
 * Joint PDFs, marginal PDFs, calculating marginals, calculating expectations, conditional expectations, total expectation theorem.
 
-Are $X$ and $Y$ independent?  
+Are $X$ and $Y$ independent?
 No. If you change $x$ then the conditional PDF of $Y$ would be different, but with independence all the values have to be the same.
 
 ![determining joint PDF ](unit5lec10-conditioning-on-a-random-variable-independence-bayes-rule/9cf5c0f17798b9f2f8bd8035f2d23345.png)

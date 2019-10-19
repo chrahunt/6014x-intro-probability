@@ -82,23 +82,23 @@ Estimation problem:
 
 $\Th$ unknown r.v.
 
-What is the primary difference between the bayesian framework and other frameworks?  
+What is the primary difference between the bayesian framework and other frameworks?
 In the bayesian framework the unknown variable is treated as a random variable instead of a constant.
 
-What is the "prior distribution" in the bayesian framework?  
+What is the "prior distribution" in the bayesian framework?
 The distribution of the unknown. $p_\Th$ or $f_\Th$, our beliefs about the unknown before obtaining data.
 
 Then we get some observation $X$ and we generate an observation model $p_{X|\Th}$ or $f_{X|\Th}$
 
 ![](unit7lec14-intro-to-bayesian-inference/bfd30e1c8ac6b0181d0c9760832e000c.png)
 
-Where do we get the prior distribution?  
+Where do we get the prior distribution?
 * symmetry argument - we can assume all possibilities are equally likely
 * range - known range, behavior
 * past knowledge about distribution of $\Th$ (prior studies)
 * arbitrary, statistician's choice.
 
-What is the output of Bayesian inference?  
+What is the output of Bayesian inference?
 A posterior distribution of the form $\cpmf{\Theta}{X}{\cnd{\cdot}{x}}$ or $\cpdf{\Theta}{X}{\cnd{\cdot}{x}}$.
 
 ![](unit7lec14-intro-to-bayesian-inference/a64116d5469a038c61827341fcf2b204.png)
@@ -283,7 +283,7 @@ what if we assumed the beta distribution as a prior?
 
 we get the beta distribution anyway, nice property.
 
-Why is this property nice?  
+Why is this property nice?
 It allows us to recursively update the posterior as we get more observations.
 
 As we get new data it impacts our conditional distribution of $\theta$ and lets us make better predictions about its value.
@@ -292,7 +292,7 @@ In the problem even though it was overwhelmingly obvious that the coin was biase
 
 ## Inferring the unknown bias of a coin - point estimates
 
-What are point estimates?  
+What are point estimates?
 Actual estimates done on the posterior.
 
 We derived the posterior last time:

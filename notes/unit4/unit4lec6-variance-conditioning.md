@@ -29,28 +29,28 @@ title: Variance; Conditioning on an event; Multiple r.v.s
 
 Variance measures the spread/dispersion of a PMF
 
-What question does the variance arise as the answer to?  
+What question does the variance arise as the answer to?
 "How do we get some kind of average distance from the mean?""
 
-Why do we calculate the average distance from the mean in the way we do?  
+Why do we calculate the average distance from the mean in the way we do?
 Because using the plain distance from the mean wouldn't be fruitful:
 $\ex{X - \mu} = \ex{x} - \mu = \mu - \mu = 0$
 
-What is the definition of the variance? <- this is a big definition  
+What is the definition of the variance? <- this is a big definition
 $\var{X} = \ex{(X - \mu)^2}$
 
-How do we calculate with the variance?  
+How do we calculate with the variance?
 $\var{X} = \ex{g(x)} = \sum_x(x-\mu)^2p_X(x)$
 for each $x$ calculate the squared distance and weigh against the probability of that $x$.
 
-What is difficult about working with the variance?  
+What is difficult about working with the variance?
 It is in the wrong units.
 
 Standard deviation $\sigma_X = \sqrt{\var{X}}$ <- in the right units.
 
 > Notation $\mu = \ex{X}$
 
-Properties of variance:  
+Properties of variance:
 The variance is not linear, but does have some straightforward properties.
 
 $\var{aX + b} = a^2\var{X}$. This is because a translation doesn't change dispersion (and in the formula itself the $b$s cancel), and the expectation is linear.
@@ -134,7 +134,7 @@ The conditional PMF on the remaining tosses will remain the same.
 
 The mean of the geometric PMF comes from both the Memorylessness property of the PMF along with the total expectation theorem.
 
-Why don't we argue for the mean of the geometric PMF from the definition?  
+Why don't we argue for the mean of the geometric PMF from the definition?
 Because
 \[
 \ex{X} = \sum_{k=1}^\infty kp_X(k) = \sum_{k=1}^\infty k(1-p)^{k-1}p
@@ -159,13 +159,13 @@ Distribution of multiple random variables at a time
 
 Given two random variables and their PMFs, $X, Y$, it's not possible to say anything about probabilities involving both of them without their joint PMF.
 
-What kind of question might you want to know the answer to?  
+What kind of question might you want to know the answer to?
 $P(X = Y)$
 
-What is the joint PMF?  
+What is the joint PMF?
 $p_{X, Y}(x, y) = \pr{X = x \text{ and } Y =y}$
 
-What is a marginal PMF?  
+What is a marginal PMF?
 The original PMF of two random variables.
 
 ![Joint PMF example](unit4lec6-variance-conditioning/d2e27edeaa6ac1126633feb8b43773a5.png)

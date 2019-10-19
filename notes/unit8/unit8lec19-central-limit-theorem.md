@@ -63,7 +63,7 @@ examples
 ## Discussion of the CLT
 
 Universal and easy to apply, only means and variances matter
-fairly accurate computational shortcut - what's the alternative?  
+fairly accurate computational shortcut - what's the alternative?
 convolve it with itself $n$ times
 
 justifies models involving normal random variables - the overall effect of multiple noisy sources is that of a normal random variable even if they are very different from normal

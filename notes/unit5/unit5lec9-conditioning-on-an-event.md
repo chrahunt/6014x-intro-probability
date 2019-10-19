@@ -30,14 +30,14 @@ Building up the same kind of tools for working with and breaking down probabilit
 
 ## Conditional PDFs
 
-What do we need to assume about the conditioning event in a conditional probability in order for it to be well-defined?  
+What do we need to assume about the conditioning event in a conditional probability in order for it to be well-defined?
 That it is positive.
 
 Comparison of discrete and continuous conditionings:
 
 ![](unit5lec9-conditioning-on-an-event/e523b45e6fd85c0ad11d98eaa003b3c2.png)
 
-What is the definition of a conditional PDF?  
+What is the definition of a conditional PDF?
 \[
 \cpr{X\in B}{A} = \int_B \iint{ \cpdf{X}{A}{x} }{x}
 \]
@@ -117,7 +117,7 @@ This is also great for overlaps in time because then it has the increased probab
 
 ## Mixed distributions (discrete and continuous)
 
-How can a distribution be neither discrete nor continuous?  
+How can a distribution be neither discrete nor continuous?
 By violating properties of both, e.g.
 \[
 X = \begin{cases}
@@ -128,7 +128,7 @@ X = \begin{cases}
 
 $X$ is not discrete because it has a continuous part. $X$ is not continuous because it has a specific nonzero value for a single input, $\pr{X = 1} = \frac{1}{2}$.
 
-What do we use to handle mixed distributions?  
+What do we use to handle mixed distributions?
 CDF - it is well-defined for all sorts of probabilities.
 
 ![creating a CDF algebraically](unit5lec9-conditioning-on-an-event/11355fccb3cb3ba23c5446258c9985d7.png)
@@ -218,7 +218,7 @@ Make expected value rule and use that to show linearity of expectations.
 
 ## Joint CDFs
 
-We know that we can recover the PDF of one variable from its CDF by taking the derivative, but now we consider two variables. How do we get the joint PDF?  
+We know that we can recover the PDF of one variable from its CDF by taking the derivative, but now we consider two variables. How do we get the joint PDF?
 We take the double integral across the CDF.
 
 ![](unit5lec9-conditioning-on-an-event/39f93ab4320d1d34b39bdc80af692f2d.png)

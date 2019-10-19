@@ -24,14 +24,14 @@ title: Probability Mass Functions
 	* Linearity
 
 
-What is a random variable?  
+What is a random variable?
 A numerical quantity that takes random values.
 
 A random variable is a function on a sample space that assigns to each element a real number.
 
 > Notation: Big letter (e.g. $X$) for the random variable, little letter (eg $x$) for the numerical value.
 
-What is the difference between a discrete and continuous random variable?  
+What is the difference between a discrete and continuous random variable?
 The types of the inputs to the function.
 
 Several random variables can be determined for a probabilistic experiment.
@@ -60,7 +60,7 @@ Properties:
 
 So the probability mass function assigns probabilities to specific outputs of random variables based on the likelihood given the number of events that could have caused it (for the d.r.v. case)
 
-What does it mean to find a PMF $\pmf{X}{x}$?  
+What does it mean to find a PMF $\pmf{X}{x}$?
 It means to calculate the probability for each output.
 
 > Pay attention to what terms of an expression actually are, e.g. random variable, constant
@@ -83,7 +83,7 @@ What are useful things to know about PMFs?
 
 ## Bernoulli and indicator random variables
 
-Describe a **Bernoulli random variable**.  
+Describe a **Bernoulli random variable**.
 A Bernoulli random variable:
 * Parameter: $p$, probability of success (1)
 * Can take values 0 or 1
@@ -96,10 +96,10 @@ X = \left\{\begin{array}{l}
 \]
 * Models success/failure or heads/tails experiments.
 
-What is an indicator?  
+What is an indicator?
 A bernoulli random variable that is 1 if a specific event occurs.
 
-What are indicators useful for?  
+What are indicators useful for?
 They allow translating manipulating events into manipulations of random variables. (Example??)
 
 ## Uniform random variables
@@ -124,7 +124,7 @@ When $a = b$, it is a constant/deterministic. It takes a single value with proba
 
 TODO: Relate this back to counting
 
-What are the parameters of a binomial random variable?  
+What are the parameters of a binomial random variable?
 $n, p\in [0, 1]$
 
 Experiment: $n$ independent tosses of a coin with $\pr{\text{heads}} = p$
@@ -187,10 +187,10 @@ Interpretations:
 
 If we have an infinite sum then it needs to be well-defined. For this course we assume $\sum_x x \pmf{X}{x} < \infty$, that the sum is absolutely convergent and so is well-defined.
 
-Given $X$ is a bernoulli random variable, what is its expected value?  
+Given $X$ is a bernoulli random variable, what is its expected value?
 $\ex{X} = p$
 
-Given $X$ is an indicator of event $I_A$, $X = I_A$  
+Given $X$ is an indicator of event $I_A$, $X = I_A$
 $\ex{I_A}= \pr{A}$
 
 Expectation of a uniform random variable:

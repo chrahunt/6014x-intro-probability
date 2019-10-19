@@ -19,10 +19,10 @@ title: Derived Distributions
   * general formula when $g$ is monotonic
 * Given the joint distribution of $X$ and $Y$, find the distribution of $Z = g(X, Y)$.
 
-Why is this skill important?  
+Why is this skill important?
 We often build up models from simpler distributions.
 
-Why should you not always jump to determining some distribution $g(X)$?  
+Why should you not always jump to determining some distribution $g(X)$?
 It can be easier to use the expected value rule.
 
 
@@ -60,19 +60,19 @@ To show how this is derived, take $Y = 2X + 3$ and notice
 
 ## Linear function of a continuous random variable
 
-What is the main difference between **linear functions** of discrete and continuous r.v.s?  
+What is the main difference between **linear functions** of discrete and continuous r.v.s?
 Continuous r.v.s have to worry about total area, which changes over intervals when they are stretched. So a scaling factor is needed.
 
 ![examples of scaling a continuous distribution](unit6lec11-derived-ditributions/53d0a29231b121991e20572979d17f23.png)
 
 Even though the actual value of the PDF changes, the relative values of the corresponding parts of the distribution do not change.
 
-What is the form of the linear function equality for continuous r.v.s?  
+What is the form of the linear function equality for continuous r.v.s?
 \[
 \pdf{Y}{y} = \frac{1}{\abs{a}} \pdf{X}{\frac{y - b}{a}}
 \]
 
-What is the approach to deriving the linear function equality?  
+What is the approach to deriving the linear function equality?
 Get the CDF on $Y$ in terms of the CDF of $X$ and differentiate both sides.
 
 
@@ -92,7 +92,7 @@ and we have the proof of the previous statement, if $X \sim \norm(\mu, \sigma^2)
 
 ## PDF of a general function
 
-What are the 2 steps for finding the PDF of a general function?  
+What are the 2 steps for finding the PDF of a general function?
 1. Find the CDF of $Y$ in terms of $X$, $\cdf{Y}{y} = \pr{Y \le y} = \pr{g(x) \le y}$
 2. Differentiate to obtain the PDF. $\pdf{Y}{y} = \frac{\d F_Y}{\d y}(y)$
 

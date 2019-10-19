@@ -11,7 +11,7 @@ title: Finite-state Markov chains
 
 ## Overview
 
-How do Markov Chains contrast with bernoulli and poisson processes?  
+How do Markov Chains contrast with bernoulli and poisson processes?
 Not memoryless
 
 past and future states are independent conditioned on the present state
@@ -37,7 +37,7 @@ past and future are linked by state which evolves over time
 
 ## Checkout counter example
 
-Imagine a single checkout line with people in line. What are the interesting things that can happen?  
+Imagine a single checkout line with people in line. What are the interesting things that can happen?
 Someone leaves or someone arrives
 
 Assume 1 person is served at a time.

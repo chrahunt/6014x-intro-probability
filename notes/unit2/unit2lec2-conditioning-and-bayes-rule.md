@@ -11,13 +11,13 @@ title: Conditioning and Bayes Rule
 
 ## Motivation and Overview
 
-Conditional probabilities are useful for:  
+Conditional probabilities are useful for:
 breaking up complex models, divide and conquer
 
-What forms the foundation of the field of inference?  
+What forms the foundation of the field of inference?
 Conditional probabilities
 
-When is independence useful?  
+When is independence useful?
 When probabilistic phenomena are non-interacting
 
 Terms:
@@ -35,7 +35,7 @@ Three tools that use conditional probability
 
 These tools contain very powerful ideas.
 
-Which rule is the foundation for the field of inference?  
+Which rule is the foundation for the field of inference?
 Bayes rule
 
 What is the definition of conditional probability?
@@ -44,7 +44,7 @@ What is the definition of conditional probability?
 \]
 given $\pr{B} \neq 0$
 
-What motivates our definition of conditional probability?  
+What motivates our definition of conditional probability?
 Given a set of outcomes in $B$ with certain probability, the set of outcomes in $A$ that are also in $B$ over the total probability of outcomes in $B$ puts the probability of outcomes in $A$ in terms of the total probability of outcomes in $B$ (which includes outcomes not in $A$).
 
 ## Dice roll example
@@ -69,7 +69,7 @@ Recall:
 
 Since conditional probabilities satisfy the probability axioms we can use probability theorems and formulas derived on normal probabilities on conditional probabilities.
 
-What are conditional probabilities used for?  
+What are conditional probabilities used for?
 Revising a model when we get new information.
 
 Ex: Radar detection.
@@ -81,7 +81,7 @@ Ex: Radar detection.
 
 The probabilities on the second level of the tree are conditional probabilities, meaning they already take into account the fact that $A$ or $A^c$ occurred.
 
-What is the question here?  
+What is the question here?
 $\pr{A\cap B}$, that something is flying and registered on radar.
 
 Starting with the definition of conditional probability
@@ -126,7 +126,7 @@ $\cpr{A}{B} = \frac{\pr{A \cap B}}{\pr{B}}$
 \end{align}
 \]
 
-By association, it's not difficult to come up with the same rule for three probabilities ($\cpr{A}{B, C}$. Thinking about it in terms of a tree as in the last example, this is calculating the individual leaf nodes along some tree
+By association, it's not difficult to come up with the same rule for three probabilities $\cpr{A}{B, C}$. Thinking about it in terms of a tree as in the last example, this is calculating the individual leaf nodes along some tree
 
 The general formula is
 

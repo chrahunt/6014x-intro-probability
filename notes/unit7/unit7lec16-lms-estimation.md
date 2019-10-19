@@ -11,7 +11,7 @@ title: Least mean squares (LMS) estimation
 
 ## Overview
 
-What are the two methods we already have for estimating an unknown parameters?  
+What are the two methods we already have for estimating an unknown parameters?
 MAP, conditional expectation (LMS)
 
 Impose **performance criterion** and then find an estimate which is optimal with respect to that criterion.
@@ -136,7 +136,7 @@ Nothing in our arguments requires that $\Th$ or $X$ are single dimensioned
 ![](unit7lec16-lms-estimation/6b74a326127b276a0ed3461deb8b4344.png)
 
 
-What are the challenges of LMS estimation?  
+What are the challenges of LMS estimation?
 1. The model $\cpdf{X}{\Th}{\cnd{x}{\th}}$ (required for bayes rule) may not be available
 2. It can be hard to compute/implement/analyze
 

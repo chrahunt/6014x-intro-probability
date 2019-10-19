@@ -22,13 +22,13 @@ What are the main properties of a sample space?
 2. Collectively exhaustive - every outcome is contained in the sample space.
 3. At the right granularity - individual samples are at the level of detail that captures the information relevant to you
 
-How is the sample space denoted?  
+How is the sample space denoted?
 \(\Omega\)
 
-For what kinds of models is a tree useful?  
+For what kinds of models is a tree useful?
 Discrete sequential models.
 
-What is an event?  
+What is an event?
 A subset of the sample space to which probability is assigned
 
 Probabilities are in the range $[0, 1]$.
@@ -46,7 +46,7 @@ What are some consequences of the probability axioms?
 5. $\pr{A \cup B} = \pr{A} + \pr{B} - \pr{A \cap B}$
 6. Union bound: $\pr{A \cup B} \le \pr{A} + \pr{B}$
 
-What is the discrete uniform law?  
+What is the discrete uniform law?
 Given $\Omega$ of $n$ equally likely elements, and $A \subset \Omega, |A| = k$, then $\pr{A} = k \cdot \frac{1}{n}$
 
 What are the steps of a probability calculation?
@@ -66,10 +66,10 @@ infinite sum
 
 Countable and uncountable.
 
-Probabilities can be considered frequencies.  
+Probabilities can be considered frequencies.
 Probabilities can describe beliefs, or betting preferences.
 
-What is the role of probability theory?  
+What is the role of probability theory?
 A framework for analyzing phenomena with uncertain outcomes
 * rules for consistent reasoning
 * used for predictions and decisions.

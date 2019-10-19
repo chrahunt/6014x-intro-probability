@@ -26,14 +26,14 @@ title: Conditional expectation and variance revisited; Sum of a random number if
 
 Let $h$ be a function, say $h(x) = x^2$ for all $x$.
 
-Given a random variable $X$, what is $h(X)$?  
+Given a random variable $X$, what is $h(X)$?
 $h(X)$ is the random variable that takes the value $x^2$ if $X$ happens to take the value $x$.
 
 A random variable is the same thing. It takes a value and is that value in a numerical sense but also has the properties of a random variable, ie the values that it takes on are distributed according to a PDF/PMF.
 
 function of a random variable is itself a random variable that takes the value of the random variable
 
-What are the properties of a random variable?  
+What are the properties of a random variable?
 r.v.s have distributions, mean, variance, etc.
 
 > Constants in functions can be replaced by variables parts and themselves be functions.
